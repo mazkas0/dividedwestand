@@ -1,3 +1,3 @@
 # dividedwestand
-# A Hearts of Iron IV mod
-# created by mazkas0
+ A Hearts of Iron IV mod
+ created by mazkas0
