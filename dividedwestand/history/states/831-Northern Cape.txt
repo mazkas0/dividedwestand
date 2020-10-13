@@ -1,0 +1,25 @@
+state = {
+    id = 831
+    name = "STATE_831"
+    manpower = 18394
+    state_category = rural
+   
+    provinces = {
+        1509 5203 10668
+    }
+    
+    resources = {
+        rubber = 4
+	oil = 1
+    }
+    
+    history = {
+        owner = GER
+	add_core_of = SAF
+       
+        buildings = {
+            infrastructure = 3
+            
+        }
+    }
+}

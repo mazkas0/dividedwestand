@@ -1,0 +1,29 @@
+state = {
+    id = 838
+    name = "STATE_838"
+    manpower = 1293045
+    state_category = town
+   
+    provinces = {
+        521 11516
+    }
+    
+    resources = {
+        steel = 5
+	tungsten = 1
+    }
+    
+    history = {
+        owner = BUR
+	add_core_of = BUR
+        
+        victory_points = {
+            11516 5
+        }
+        
+        buildings = {
+            infrastructure = 5
+	    industrial_complex = 2
+        }
+    }
+}

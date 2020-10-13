@@ -1,0 +1,30 @@
+state={
+	id=806
+	name="STATE_806"
+	resources={
+		steel=3.000
+		aluminium=4.000
+	}
+
+	history={
+		owner = PRI
+		add_core_of = PRI
+		victory_points = {
+			9490 3 
+		}
+		buildings = {
+			industrial_complex = 2
+			arms_factory = 1
+			infrastructure = 6
+
+		}
+
+	}
+
+	provinces={
+		551 3506 9490 11732 
+	}
+	manpower=164912
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

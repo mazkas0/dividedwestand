@@ -1,0 +1,21 @@
+state = {
+    id = 842
+    name = "STATE_842"
+    manpower = 63892
+    state_category = rural
+   
+    provinces = {
+        1854 4838 12676
+    }
+
+    history = {
+        owner = UCA
+	add_core_of = UCA
+       
+        buildings = {
+           infrastructure = 4
+	   industrial_complex = 1
+       
+        }
+    }
+}

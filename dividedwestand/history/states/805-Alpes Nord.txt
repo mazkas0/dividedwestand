@@ -1,0 +1,32 @@
+
+state = {
+    id = 805
+    name = "STATE_805"
+    manpower = 258300
+    state_category = rural
+   
+    provinces = {
+        641 3650 6639 6668 9590 11794 
+    }
+    
+    resources = {
+        steel = 3
+	oil = 1
+	tungsten = 2
+    }
+    
+    history = {
+        owner = OCC
+	add_core_of = OCC
+        
+        victory_points = {
+           11794 5
+        }
+        
+        buildings = {
+            industrial_complex = 1
+	    infrastructure = 6
+            
+        }
+    }
+}

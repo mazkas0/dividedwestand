@@ -1,0 +1,62 @@
+capital = 
+
+set_research_slots = 
+
+set_stability = 
+set_war_support = 
+
+set_technology = {
+ 	infantry_weapons = 1
+	infantry_weapons1 = 1	
+	tech_engineers = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	basic_light_tank = 1
+	basic_heavy_tank = 1
+	early_fighter = 1
+	fighter1 = 1
+	early_bomber = 1
+	tactical_bomber1 = 1
+	strategic_bomber1 = 1
+	CAS1 = 1
+	naval_bomber1 = 1
+}
+
+add_political_power = 10
+
+if = {
+	limit = {
+		has_dlc = "Together for Victory"
+	}
+	set_autonomy = {
+		target = 
+		autonomous_state = autonomy_integrated_puppet
+	}
+	else = {
+		puppet = 
+	}
+}
+
+set_popularities = {
+
+	anarchism = 
+	socialism = 
+	marxistleninism = 
+	liberal =  
+	centrism = 
+	conservatism = 
+	monarchism =  
+	oligarchy = 
+	ultranationalism = 
+	
+}
+
+set_politics = {
+	ruling_party = 
+	last_election = "1932.11.8"
+	election_frequency = 48
+	elections_allowed = no
+}

@@ -1,0 +1,36 @@
+state={
+	id=803 #WESTPRUSSIA
+	name="STATE_803"
+	resources={
+		steel=4.000
+		aluminium=2.000
+	}
+
+	history={
+		owner = GER
+		add_core_of = GER
+		victory_points = {
+			362 10 
+		}
+		victory_points = {
+			3295 5 
+		}
+		victory_points = {
+			279 1 
+		}
+		buildings = {
+			industrial_complex = 3
+			arms_factory = 1
+			infrastructure = 7
+
+		}
+
+	}
+
+	provinces={
+		3351 3380 6347 6402 9346 
+	}
+	manpower=637826
+	buildings_max_level_factor=1.000
+	state_category=city
+}

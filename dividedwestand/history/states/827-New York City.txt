@@ -1,0 +1,30 @@
+state = {
+    id = 827
+    name = "STATE_827"
+    manpower = 6382619
+    state_category = metropolis
+   
+    provinces = {
+        859 3878
+    }
+
+    history = {
+        owner = NYC
+	add_core_of = NYC
+        
+        victory_points = {
+            3879 30
+        }
+        
+        buildings = {
+            industrial_complex = 7
+	    infrastructure = 7
+	    arms_factory = 4
+	    dockyard = 3
+	    3878 = {
+				naval_base = 6
+
+			}
+        }
+    }
+}

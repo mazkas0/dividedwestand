@@ -1,0 +1,24 @@
+state = {
+    id = 835
+    name = "STATE_835"
+    manpower = 229234
+    state_category = large_town
+   
+    provinces = {
+        694 3530 3679 3690 3692 6542 6568 6581 6712 6934 9655 11640 13126 
+    }
+    
+    resources = {
+        steel = 14
+  } 
+    history = {
+           owner = BAD
+	   add_core_of = BAD
+        
+        buildings = {
+            infrastructure = 6
+	    arms_factory = 2
+	    industrial_complex = 2
+        }
+    }
+}

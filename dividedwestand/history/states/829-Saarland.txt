@@ -1,0 +1,30 @@
+state = {
+    id = 829
+    name = "STATE_829"
+    manpower = 812784
+    state_category = town
+   
+    provinces = {
+        9575 11531
+    }
+    
+    resources = {
+        steel = 5
+	tungsten = 1
+    }
+    
+    history = {
+        owner = RHI
+	add_core_of = RHI
+        
+        victory_points = {
+            11531 5
+        }
+        
+        buildings = {
+            industrial_complex = 1
+  	    infrastructure = 6
+            
+        }
+    }
+}

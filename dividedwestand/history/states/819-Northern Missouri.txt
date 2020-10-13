@@ -1,0 +1,23 @@
+
+state = {
+    id = 819
+    name = "STATE_819"
+    manpower = 217823
+    state_category = rural
+   
+    provinces = {
+        1523 7449 7607 10333 10391 10516 
+    }
+    
+    history = {
+        owner = FRP
+	add_core_of = FRP
+       
+        buildings = {
+            infrastructure = 4
+	    industrial_complex = 1
+            
+
+        }
+    }
+}

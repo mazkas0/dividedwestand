@@ -1,0 +1,38 @@
+state={
+	id=799
+	name="STATE_799"
+	resources={
+		steel=3.000
+		oil=1.000
+		chromium=3.000
+	}
+
+	history={
+		owner = AUS
+		add_core_of = AUS
+		add_core_of = ITA
+		add_core_of = SLV
+		victory_points = {
+			6626 10 
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 2
+			industrial_complex = 3
+		
+			6626 = {
+				naval_base = 5
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		599 6626 11595 
+	}
+	manpower=1063159
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

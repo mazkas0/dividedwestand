@@ -1,0 +1,26 @@
+state = {
+    id = 824
+    name = "STATE_824"
+    manpower = 27423
+    state_category = rural
+   
+    provinces = {
+        400 3254 
+    }
+    
+    resources = {
+        steel = 2
+    }
+    
+    history = {
+        owner = LIT
+	add_core_of = LIT
+        
+        
+        buildings = {
+            infrastructure = 4
+	    industrial_complex = 1
+           
+        }
+    }
+}

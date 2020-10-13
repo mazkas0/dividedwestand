@@ -1,0 +1,26 @@
+state = {
+    id = 816
+    name = "STATE_816"
+    manpower = 578129
+    state_category = rural
+   
+    provinces = {
+        598 3602 6778 6795 6916 9721 9754 10381 11662 11665 11722
+    }
+    
+    resources = {
+        steel = 7
+	tungsten = 1
+    }
+    
+    history = {
+        owner = CAN
+	add_claim_by = USA
+        
+        buildings = {
+            infrastructure = 4
+	    industrial_complex = 1
+          
+        }
+    }
+}

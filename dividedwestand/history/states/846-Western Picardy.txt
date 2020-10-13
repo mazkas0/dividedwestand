@@ -1,0 +1,28 @@
+state = {
+    id = 846
+    name = "STATE_846"
+    manpower = 209343
+    state_category = rural
+   
+    provinces = {
+        454 6585 11420 
+    }
+    
+    resources = {
+        steel = 4
+    }
+    
+    history = {
+        owner = PRI
+	add_core_of = PRI
+        
+        buildings = {
+            infrastructure = 6
+            
+
+            11420 = {
+                naval_base = 5
+            }
+        }
+    }
+}

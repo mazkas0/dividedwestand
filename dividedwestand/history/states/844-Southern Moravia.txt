@@ -1,0 +1,25 @@
+state = {
+    id = 844
+    name = "STATE_844"
+    manpower = 104782
+    state_category = rural
+   
+    provinces = {
+        11832 11857 11868
+    }
+    
+    resources = {
+        tungsten = 5
+	aluminium = 1
+    }
+    
+    history = {
+        owner = SER
+	add_core_of = SER
+        
+        buildings = {
+            infrastructure = 4
+            
+        }
+    }
+}

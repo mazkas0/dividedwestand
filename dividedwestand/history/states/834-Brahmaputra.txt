@@ -1,0 +1,27 @@
+state = {
+    id = 834
+    name = "STATE_834"
+    manpower = 1783214
+    state_category = rural
+   
+    provinces = {
+        1116 7455 10349 10810 12730 
+    }
+    
+    resources = {
+        oil = 6
+	rubber = 3
+	steel = 8
+    }
+    
+    history = {
+        owner = RAJ
+	add_core_of = RAJ
+      
+        buildings = {
+            infrastructure = 3
+	    industrial_complex = 1
+            
+        }
+    }
+}

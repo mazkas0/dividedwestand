@@ -1,0 +1,26 @@
+state={
+	id=843
+	name="STATE_843"
+	resources={
+		steel=5.000
+	}
+
+	history={
+		owner = AUS
+		add_core_of = AUS
+		add_core_of = SLV
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 5
+
+		}
+
+	}
+
+	provinces={
+		3631 
+	}
+	manpower=11823
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

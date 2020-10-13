@@ -1,0 +1,15 @@
+state = {
+    id = 825
+    name = "STATE_825"
+    manpower = 478357
+    state_category = rural
+   
+    provinces = {
+        2057 4968 4974 5027 5058 5099 7970 8101 10815 10892 10901 10923 12455 12749
+    }
+    
+    history = {
+        owner = IRQ
+	add_core_of = IRQ
+    }
+}

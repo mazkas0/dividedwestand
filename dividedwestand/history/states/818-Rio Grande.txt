@@ -1,0 +1,27 @@
+state = {
+    id = 818
+    name = "STATE_818"
+    manpower = 389323
+    state_category = rural
+   
+    provinces = {
+        1954 2019 2042 4955 5038 5061 6785 6987 10740 10894 12369 12728 12782 
+    }
+    
+    resources = {
+        oil = 7
+	steel = 14
+    }
+    
+    history = {
+        owner = MEX
+	add_core_of = MEX
+        
+        buildings = {
+            infrastructure = 4
+	    arms_factory = 1
+	    industrial_complex = 1
+            
+        }
+    }
+}

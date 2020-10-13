@@ -1,0 +1,23 @@
+state = {
+    id = 810
+    name = "STATE_810"
+    manpower = 456893
+    state_category = rural
+   
+    provinces = {
+        1846 5221 10594 10930
+    }
+    
+    resources = {
+        aluminium = 4
+	steel = 5
+	tungsten = 2
+	oil = 3
+    }
+    
+    history = {
+        owner = GER
+	add_core_of = ZAM
+       
+    }
+}

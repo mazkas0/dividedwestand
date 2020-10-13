@@ -1,0 +1,26 @@
+state={
+	id=809
+	name="STATE_809"
+	resources={
+		steel=3.000
+		oil=1.000
+	}
+
+	history={
+		owner = LIT
+		add_core_of = LIT
+		buildings = {
+			industrial_complex = 3
+			infrastructure = 6
+
+		}
+
+	}
+
+	provinces={
+		347 11247 
+	}
+	manpower=48531
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,31 @@
+state = {
+    id = 802
+    name = "STATE_802"
+    manpower = 150374
+    state_category = town
+   
+    provinces = {
+        549 678 1346 6529 9503
+    }
+    
+    resources = {
+        steel = 3
+	tungsten = 2
+    }
+    
+    history = {
+        owner = ALA
+	add_core_of = ALA
+        
+        victory_points = {
+            9503 15
+        }
+        
+        buildings = {
+            arms_factory = 2
+	    industrial_complex = 4
+	    infrastructure = 8
+            
+        }
+    }
+}

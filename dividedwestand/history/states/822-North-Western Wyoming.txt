@@ -1,0 +1,22 @@
+state={
+	id=822
+	name="STATE_822"
+
+	history={
+		owner = MNA
+		add_core_of = MNA
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 4
+
+		}
+
+	}
+
+	provinces={
+		1815 4610 4820 7814 12651 
+	}
+	manpower=89350
+	buildings_max_level_factor=1.000
+	state_category=rural
+}
