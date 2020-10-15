@@ -1,4 +1,4 @@
-version="0.01"
+﻿version="0.01"
 tags={
 	"Alternative History"
 	"Graphics"
@@ -9,4 +9,4 @@ tags={
 	"Events"
 }
 name="Divided We Stand"
-supported_version="1.9.3"
+supported_version="1.10.1"

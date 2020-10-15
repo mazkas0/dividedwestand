@@ -8,7 +8,7 @@ state={
 	}
 
 	history={
-		owner = RHI
+		owner = HNO
 		victory_points = {
 			11435 1 
 		}
@@ -20,15 +20,7 @@ state={
 			industrial_complex = 3
 
 		}
-		add_core_of = RHI
-		1939.1.1 = {
-			buildings = {
-				radar_station = 1
-				synthetic_refinery = 3
-
-			}
-
-		}
+		add_core_of = HNO
 
 	}
 

@@ -7,7 +7,7 @@ state={
 	}
 
 	history={
-		owner = BOR
+		owner = PRI
 		victory_points = {
 			3652 5 
 		}
@@ -17,7 +17,7 @@ state={
 			air_base = 2
 
 		}
-		add_core_of = BOR
+		add_core_of = PRI
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 3

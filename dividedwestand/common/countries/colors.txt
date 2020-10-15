@@ -697,98 +697,14 @@ SHL = {
 
 #--------------------------------------------
 
-BAD = {
-	color = rgb { 0  140  246 }
-	color_ui = rgb { 0  140  246 }
-}
-
-SAX = {
-	color = rgb { 0  140  246 }
-	color_ui = rgb { 0  140  246 }
-}
-
-THU = {
-	color = rgb { 0  140  246 }
-	color_ui = rgb { 0  140  246 }
-}
-
-FRN = {
-	color = rgb { 0  140  246 }
-	color_ui = rgb { 0  140  246 }
-}
-
-LOR = {
-	color = rgb { 255  59  52 }
-	color_ui = rgb { 255  59  52 }
-}
-
-BOR = {
-	color = rgb { 255  59  52 }
-	color_ui = rgb { 255  59  52 }
-}
-BUR = {
-	color = rgb { 255  59  52 }
-	color_ui = rgb { 255  59  52 }
-}
-
-CAL = {
-	color = rgb { 255  59  52 }
-	color_ui = rgb { 255  59  52 }
-}
-
-ALA = {
-	color = rgb { 0  140  246 }
-	color_ui = rgb { 0  140  246 }
-}
-
-NAN = {
-	color = rgb { 255  59  52 }
-	color_ui = rgb { 255  59  52 }
-}
-
-NOM = {
-	color = rgb { 255  59  52 }
-	color_ui = rgb { 255  59  52 }
-}
-
-ORE = {
-	color = rgb { 255  59  52 }
-	color_ui = rgb { 255  59  52 }
-}
-
 PRI = {
 	color = rgb { 255  59  52 }
 	color_ui = rgb { 255  59  52 }
 }
 
-HES = {
-	color = rgb { 255  0  52 }
-	color_ui = rgb { 255  0  52 }
-}
-
-BRE = {
-	color = rgb { 255  0  52 }
-	color_ui = rgb { 255  0  52 }
-}
-
 HNO = {
 	color = rgb { 255  0  52 }
 	color_ui = rgb { 255  0  52 }
-}
-
-RHI = {
-	color = rgb { 255  0  52 }
-	color_ui = rgb { 255  0  52 }
-}
-
-SHO = {
-	color = rgb { 255  0  52 }
-	color_ui = rgb { 255  0  52 }
-}
-
-WUR = {
-	color = rgb { 0  140  246 }
-	color_ui = rgb { 0  140  246 }
 }
 
 WAR = {
@@ -799,10 +715,7 @@ SIL = {
 	color = rgb { 194 198 215 }
 	color_ui = rgb { 255 255 255 }
 }
-BRI = {
-	color = rgb { 255  59  52 }
-	color_ui = rgb { 255  59  52 }
-}
+
 UCA = {
 	color = rgb { 107 47 57 }
 	color_ui = rgb { 107 47 57 }

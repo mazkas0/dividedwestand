@@ -4,7 +4,7 @@ state={
 	name="STATE_14"
 
 	history={
-		owner = BRI
+		owner = PRI
 		victory_points = {
 			3552 20 
 		}
@@ -34,7 +34,7 @@ state={
 			}
 
 		}
-		add_core_of = BRI
+		add_core_of = PRI
 		1939.1.1 = {
 			buildings = {
 				dockyard = 5

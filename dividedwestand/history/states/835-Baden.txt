@@ -12,8 +12,8 @@ state = {
         steel = 14
   } 
     history = {
-           owner = BAD
-	   add_core_of = BAD
+           owner = BAY
+	   add_core_of = BAY
         
         buildings = {
             infrastructure = 6

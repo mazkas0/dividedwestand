@@ -7,12 +7,12 @@ state={
 		victory_points = {
 			651 1 
 		}
-		owner = BOR
+		owner = PRI
 		buildings = {
 			infrastructure = 6
 
 		}
-		add_core_of = BOR
+		add_core_of = PRI
 
 	}
 

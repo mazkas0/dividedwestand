@@ -1,0 +1,40 @@
+state = {
+    id = 848
+    name = "STATE_848"
+    manpower = 783432
+    state_category = town
+    buildings_max_level_factor = 2
+   
+    provinces = {
+        657 687 3076 9635 
+    }
+    
+    resources = {
+        steel = 5
+	chromium = 1
+	aluminium = 2
+    }
+    
+    history = {
+        owner = ROM
+	add_core_of = ROM
+        
+        victory_points = {
+			657 3 
+		}
+        
+        buildings = {
+            657 = {
+		naval_base = 8
+
+		}
+		687 = {
+			naval_base = 1
+
+		}
+		dockyard = 1
+		infrastructure = 6
+            
+        }
+    }
+}

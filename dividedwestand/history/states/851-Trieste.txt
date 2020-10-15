@@ -1,0 +1,31 @@
+
+state = {
+    id = 851
+    name = "STATE_851"
+    manpower = 1673435
+    state_category = city
+   
+    provinces = {
+        599 6626 11595
+    }
+    
+    resources = {
+        steel = 16
+	oil = 2
+    }
+    
+    history = {
+        owner = AUS
+	add_core_of = AUS
+        
+        victory_points = {
+			6626 10
+		}
+        
+        buildings = {
+            infrastructure = 6
+	    arms_factory = 2
+            
+        }
+    }
+}

@@ -1,0 +1,24 @@
+state = {
+    id = 849
+    name = "STATE_849"
+    manpower = 489324
+    state_category = rural
+    buildings_max_level_factor = 2
+   
+    provinces = {
+        878 893 11813
+    }
+    
+    resources = {
+        steel = 4
+    }
+    
+    history = {
+        add_core_of = TUR
+	owner = TUR
+       
+        buildings = {
+            infrastructure = 3
+        }
+    }
+}

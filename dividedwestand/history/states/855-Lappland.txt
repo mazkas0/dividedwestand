@@ -1,0 +1,25 @@
+state = {
+    id = 855
+    name = "STATE_855"
+    manpower = 37894
+    state_category = rural
+   
+    provinces = {
+        103 167 2992 3069 3097 3107 3156 3158 6061 6128 6137 6142 6179 6183 9112 11030 
+    }
+    
+    resources = {
+        tungsten = 2
+	chromium = 1
+    }
+    
+    history = {
+        owner = SOV
+	add_core_of = FIN
+   
+        buildings = {
+            infrastructure = 3
+           
+        }
+    }
+}

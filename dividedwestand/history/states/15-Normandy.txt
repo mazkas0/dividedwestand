@@ -7,7 +7,7 @@ state={
 	}
 
 	history={
-		owner = NOM
+		owner = PRI
 		victory_points = {
 			9434 10 
 		}
@@ -40,7 +40,7 @@ state={
 			}
 
 		}
-		add_core_of = NOM
+		add_core_of = PRI
 
 	}
 

@@ -1,0 +1,35 @@
+state = {
+    id = 854
+    name = "STATE_854"
+    manpower = 689234
+    state_category = large_town
+    buildings_max_level_factor = 4
+   
+    provinces = {
+        1155 4073 9947 12049 
+    }
+    
+    resources = {
+        steel = 6
+	aluminium = 3
+    }
+    
+    history = {
+        owner = ENG
+	add_core_of = EGY
+        
+        victory_points = {
+		4073 3 
+	}
+        
+        buildings = {
+            infrastructure = 6
+	    air_base = 3
+            
+
+            12049 = {
+		naval_base = 2
+		}
+        }
+    }
+}

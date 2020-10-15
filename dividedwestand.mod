@@ -9,5 +9,5 @@ tags={
 	"Events"
 }
 name="Divided We Stand"
-supported_version="1.9.3"
+supported_version="1.10.1"
 path="C:/Users/pk278/Documents/Paradox Interactive/Hearts of Iron IV/mod/dividedwestand"
