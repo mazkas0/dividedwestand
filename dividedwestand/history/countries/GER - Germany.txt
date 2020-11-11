@@ -27,11 +27,19 @@ set_technology = {
 
 add_political_power = 10
 
+
+add_ideas = {
+
+	partial_mobilization
+	limited_conscription
+
+}
+
 set_popularities = {
 
 	anarchism = 0
 	socialism = 5
-	marxistleninism = 6
+	blanquism = 6
 	liberal = 18 
 	centrism = 19
 	conservatism = 18
@@ -46,6 +54,17 @@ set_politics = {
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = no
+}
+
+create_country_leader = {
+	name = "Kaiser Wilhelm II"
+	desc = "POLITICS_KAISER_WILHELM_DESC"
+	picture = "gfx/leaders/GER/GER_Wilhelm_II.dds"
+	expire = "1941.6.4"
+	ideology = monarchist
+	traits = {
+		weakened_tiger
+	}
 }
 
 

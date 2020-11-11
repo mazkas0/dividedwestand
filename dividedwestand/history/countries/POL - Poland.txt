@@ -1,9 +1,9 @@
-capital = 59
+capital = 88
 
-set_research_slots = 3
+set_research_slots = 3 
 
-set_stability = 0.43
-set_war_support = 0.78
+set_stability = 0.78
+set_war_support = 0.65
 
 set_technology = {
  	infantry_weapons = 1
@@ -29,22 +29,21 @@ add_political_power = 10
 
 set_popularities = {
 
-	anarchism = 22
-	socialism = 33
-	blanquism = 30
-	liberal = 3
+	anarchism = 23
+	socialism = 27
+	blanquism = 32
+	liberal = 3 
 	centrism = 2
-	conservatism = 1
-	monarchism = 6 
+	conservatism = 3
+	monarchism = 0 
 	oligarchy = 0
-	ultranationalism = 3
+	ultranationalism = 10
 	
 }
 
 set_politics = {
-	ruling_party = socialism
+	ruling_party = blanquism
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = no
 }
-

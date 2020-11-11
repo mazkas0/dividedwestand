@@ -31,7 +31,7 @@ set_popularities = {
 
 	anarchism = 4
 	socialism = 6
-	marxistleninism = 9
+	blanquism = 9
 	liberal =  22
 	centrism = 37
 	conservatism = 15
