@@ -675,8 +675,8 @@ D50 = {
 	color_ui = rgb { 255 138 61 }
 }
 BAY = {
-	color = rgb { 0  140  246 }
-	color_ui = rgb { 0  140  246 }
+	color = rgb { 50 95 134 }
+	color_ui = rgb { 50 95 134 }
 }
 MEK = {
 	color = rgb { 186 245 86 }
@@ -698,13 +698,13 @@ SHL = {
 #--------------------------------------------
 
 PRI = {
-	color = rgb { 255  59  52 }
-	color_ui = rgb { 255  59  52 }
+	color = rgb { 0 0 139 }
+	color_ui = rgb { 0 0 139 }
 }
 
 HNO = {
-	color = rgb { 255  0  52 }
-	color_ui = rgb { 255  0  52 }
+	color = rgb { 139  0  0 }
+	color_ui = rgb { 139  0  0 }
 }
 
 WAR = {
