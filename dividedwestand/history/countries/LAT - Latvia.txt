@@ -31,18 +31,18 @@ set_popularities = {
 
 	anarchism = 6
 	socialism = 9
-	blanquism =12 
+	blanquism = 31 
 	liberal = 15 
 	centrism = 17
-	conservatism = 16 
-	monarchism =  23
+	conservatism = 7 
+	monarchism =  13
 	oligarchy = 0
 	ultranationalism = 2
 	
 }
 
 set_politics = {
-	ruling_party = monarchism
+	ruling_party = blanquism
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = no
