@@ -42,8 +42,6 @@ ideologies = {
 			
 			socialist = {
 			}
-			revolutionary_socialist = {
-			}
 		
 		}
 		
@@ -75,22 +73,22 @@ ideologies = {
 		ai_communist = yes 
 	}
 
-	marxistleninism = {  
+	blanquism = {  
 			
 			types = {  
 			
-			marxistleninist= {
+			blanquist = {
 			}
 		
 		}
  
 		dynamic_faction_names = {
-			"FACTION_NAME_MARXISTLENINIST_1"
-			"FACTION_NAME_MARXISTLENINIST_2"
-			"FACTION_NAME_MARXISTLENINIST_3"
-			"FACTION_NAME_MARXISTLENINIST_4"
-			"FACTION_NAME_MARXISTLENINIST_5"
-			"FACTION_NAME_MARXISTLENINIST_6"
+			"FACTION_NAME_BLANQUIST_1"
+			"FACTION_NAME_BLANQUIST_2"
+			"FACTION_NAME_BLANQUIST_3"
+			"FACTION_NAME_BLANQUIST_4"
+			"FACTION_NAME_BLANQUIST_5"
+			"FACTION_NAME_BLANQUIST_6"
 		}
 		
 		color = { 99 0 0 }   
@@ -334,7 +332,7 @@ ideologies = {
 }
 #anarchism
 #socialism
-#marxistleninism
+#blanquism
 #liberal
 #centrism
 #conservatism
