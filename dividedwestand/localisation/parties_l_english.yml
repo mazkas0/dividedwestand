@@ -1,0 +1,80 @@
+﻿l_english:
+
+anarchist:0 "Anarchism"
+anarchist_desc:0 "Anarchism is the rejection of authority itself, promoting the division of society into self-managing and self-governing collectives instead of a singular, centralized state."
+
+socialist:0 "Socialism"
+socialist_desc:0 "Socialism is a political, social and economic philosophy encompassing a range of economic and social systems characterised by social ownership of the means of production and workers' self-management of enterprises."
+
+blanquist:0 "Blanquism"
+blanquist_desc:0 "Blanquists do not believe in the predominant role of the working class, nor do they believe in popular movements—instead they believe that the revolution should be carried out by a small group of professional, dedicated revolutionaries, who would establish a dictatorship by force."
+
+social_democratic:0 "Social Democracy"
+social_democratic_desc:0 "Social democracy is a political, social and economic philosophy within socialism that supports political and economic democracy. As a policy regime, it is described by academics as advocating economic and social interventions to promote social justice within the framework of a liberal-democratic polity and a capitalist-oriented mixed economy."
+
+federalist:0 "Federalism"
+federalist_desc:0 "Federalism is a mixed or compound mode of government that combines a general government (the central or "federal" government) with regional governments (provincial, state, cantonal, territorial or other sub-unit governments) in a single political system."
+
+centrist:0 "Centrism"
+centrist_desc:0 "Centrism is a political outlook or specific position that involves acceptance or support of a balance of a degree of social equality and a degree of social hierarchy, while opposing political changes which would result in a significant shift of society strongly to either the left or the right."
+
+conservative:0 "Conservatism"
+conservative_desc:0 "Conservatism is a political and social philosophy promoting traditional social institutions in the context of culture and civilization. The central tenets of conservatism include tradition, hierarchy, and authority, as established in respective cultures, as well as property rights."
+
+constitutionalist:0 "Constitutionalism"
+constitutionalist_desc:0 "Constitutionalism is a compound of ideas, attitudes, and patterns of behavior elaborating the principle that the authority of government derives from and is limited by a body of fundamental law. Specifically, many Constitutionalist governments started out of an desire to limit the role of the monarchy."
+
+monarchist:0 "Monarchism"
+monarchist_desc:0 "A monarchy is a form of government in which a person, the monarch, is head of state for life or until abdication."
+
+corporatist:0 "Corporatism"
+corporatist_desc:0 "Corporate capitalism is a capitalist marketplace characterized by the dominance of hierarchical and bureaucratic corporations.
+
+military_junta:0 "Military Junta"
+military_junta_desc:0 "The term is now used to refer to an authoritarian form of government characterized by oligarchic military dictatorship."
+
+ultranationalist:0 "Ultranationalism"
+ultranationalist_desc:0 "Ultranationalism is extreme nationalism that promotes the interest of one state or people above all others, or simply extreme devotion to one's own nation."
+
+#---------------------------------------------------
+
+ultranationalism:0 "Ultranationalist"
+ultranationalism_noun:0 "Ultranationalism"
+ultranationalism_desc:0 "Rule of the Leader"
+
+oligarchy:0 "Oligarchy"
+oligarchy_noun:0 "Oligarchist"
+oligarchy_desc:0 "Rule of Few"
+
+monarchism:0 "Monarchy"
+monarchism_noun:0 "Monarchism"
+monarchism_desc:0 "Rule of One"
+
+socialism:0 "Socialist"
+socialism_noun:0 "Socialism"
+socialism_desc:0 "Rule of the People"
+
+blanquism:0 "Blanquist"
+blanquism_noun:0 "Blanquism"
+blanquism_desc:0 "Rule of the Party"
+
+liberal:0 "Liberal"
+liberal_noun:0 "Liberalism"
+liberal_desc:0 "Rule of Liberty"
+
+centrism:0 "Centrist"
+centrism_noun:0 "Centrism"
+centrism_desc:0 "Rule of Compromise"
+
+conservatism:0 "Conservative"
+conservatism_noun:0 "Conservatism"
+conservatism_desc:0 "Rule of Tradition"
+
+anarchism:0 "Anarchist"
+anarchism_noun:0 "Anarchism"
+anarchism_desc:0 "Rule of None"
+
+#----------------------------------
+
+GER_monarchism_party:0 "CSP"
+GER_monarchism_party_long:0 "Christlich-soziale Partei"
