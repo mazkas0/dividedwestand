@@ -78,3 +78,27 @@ anarchism_desc:0 "Rule of None"
 
 GER_monarchism_party:0 "CSP"
 GER_monarchism_party_long:0 "Christlich-soziale Partei"
+
+GER_liberal_party:0 "NLP"
+GER_liberal_party_long:0 "Nationalliberale Partei"
+
+GER_socialism_party:0 "ADAV"
+GER_socialism_party_long:0 "Allgemeiner Deutscher Arbeiter-Verein"
+
+GER_ultranationalism_party:0 "DNVP"
+GER_ultranationalism_party_long:0 "Deutschnationale Volkspartei"
+
+GER_blanquism_party:0 "SDAP"
+GER_blanquism_party_long:0 "Sozialdemokratische Arbeiterpartei Deutschlands"
+
+GER_anarchism_party:0 "USPD"
+GER_anarchism_party_long:0 "Unabhängige Sozialdemokratische Partei Deutschland"
+
+GER_oligarchy_party:0 "FKP"
+GER_oligarchy_party_long:0 "Freikonservative Partei"
+
+GER_centrism_party:0 "DFP"
+GER_centrism_party_long:0 "Deutsche Freisinnige Partei"
+
+GER_conservatism_party:0 "DkP"
+GER_conservatism_party_long:0 "Deutschkonservative Partei"
