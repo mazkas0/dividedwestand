@@ -1,4 +1,4 @@
-#Divided We Stand
+# Divided We Stand
 A Hearts of Iron IV mod
 ## Dev Team
 - mazkas
