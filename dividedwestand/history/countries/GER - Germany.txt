@@ -30,9 +30,11 @@ add_political_power = 10
 
 add_ideas = {
 
-	partial_mobilization
 	limited_conscription
-
+	limited_exports
+	partial_economic_mobilisation
+	border_clashes
+	weakened_tiger
 }
 
 set_popularities = {
@@ -63,7 +65,7 @@ create_country_leader = {
 	expire = "1941.6.4"
 	ideology = monarchist
 	traits = {
-		weakened_tiger
+		disgraced_monarch
 	}
 }
 

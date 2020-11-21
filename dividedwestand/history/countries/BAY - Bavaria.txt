@@ -32,9 +32,9 @@ set_popularities = {
 	anarchism = 0
 	socialism = 5
 	blanquism = 8
-	liberal =  34
+	liberal =  29
 	centrism = 12
-	conservatism = 26
+	conservatism = 31
 	monarchism =  10
 	oligarchy = 0
 	ultranationalism = 5
@@ -42,8 +42,21 @@ set_popularities = {
 }
 
 set_politics = {
-	ruling_party = liberal
+	ruling_party = conservatism
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = yes
+}
+
+create_country_leader = {
+	name = "Konrad Adenauer"
+	desc = "POLITICS_KONRADE_ADENAUER_DESC"
+	picture = "gfx/leaders/BAY/Portrait_Germany_Konrad_Adenauer.dds"
+	expire = "1957.9.2"
+	ideology = conservative
+	traits = {
+		humble
+		popular_figurehead
+		anti_communist
+	}
 }

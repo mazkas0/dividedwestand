@@ -48,6 +48,20 @@ set_politics = {
 	elections_allowed = no
 }
 
+create_country_leader = {
+
+	name = "Kaiser Karl I"
+	desc = "POLITICS_KAISER_KARL_DESC"
+	picture = "gfx/leaders/AUS/AUS_KarlHapsburg.dds"
+	expire = "1961.7.1"
+	ideology = monarchist
+	traits = {
+		anti_communist
+		autocratic_imperialist
+		headstrong
+	}
+}
+
 if = {
 	limit = {
 		has_dlc = "Together for Victory"

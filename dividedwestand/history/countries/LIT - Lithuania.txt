@@ -29,15 +29,15 @@ add_political_power = 10
 
 set_popularities = {
 
-	anarchism = 0
-	socialism = 0
+	anarchism = 5
+	socialism = 6
 	blanquism = 2
-	liberal =  5
-	centrism = 19
-	conservatism = 16
-	monarchism = 0
-	oligarchy = 4
-	ultranationalism = 49
+	liberal = 9
+	centrism = 5
+	conservatism = 9
+	monarchism =  24
+	oligarchy = 0
+	ultranationalism = 40
 	
 }
 

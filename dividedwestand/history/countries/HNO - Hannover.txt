@@ -1,4 +1,4 @@
-capital = 59
+capital = 58
 
 set_research_slots = 3
 
@@ -48,3 +48,15 @@ set_politics = {
 	elections_allowed = no
 }
 
+create_country_leader = {
+	name = "Ernst Thälmann"
+	desc = "POLITICS_ERNST_THALMANN_DESC"
+	picture = "gfx/leaders/HNO/Portrait_Germany_Ernst_Thalmann.dds"
+	expire = "1957.4.7"
+	ideology = socialist
+	traits = {
+		popular_figurehead
+		veteran_communist
+	}
+}
+	
