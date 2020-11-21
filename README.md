@@ -6,5 +6,6 @@ A Hearts of Iron IV mod
 - TacoHell
 - mcarr9
 - Genosse Niekisch
+- Seved the Driets
 
 Created by mazkas
