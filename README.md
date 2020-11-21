@@ -1,12 +1,12 @@
 # Divided We Stand
 A Hearts of Iron IV mod
 ## Dev Team
-- mazkas
-- cornlover
-- TacoHell
-- mcarr9
-- Genosse Niekisch
-- Seved the Driets
+- mazkas (Mod Creator/Developer Lead)
+- mcarr9 (Senior Developer)
+- cornlover (Developer)
+- Genosse Niekisch (Developer)
+- TacoHell (Junior Developer)
+- Seved the Driets (Junior Developer)
 
 Created by mazkas
 ### How to Install
