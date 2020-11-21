@@ -9,4 +9,5 @@ tags={
 	"Events"
 }
 name="Divided We Stand"
+path = "mod/dividedwestand"
 supported_version="1.10.1"
