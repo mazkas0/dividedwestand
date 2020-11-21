@@ -1,0 +1,31 @@
+ideas = {
+
+	country = {
+		border_clashes = {
+
+			modifier = {
+				political_power_factor = -0.50
+				ultranationalism_drift = 0.01
+				conscription_factor = -0.10
+				offence = -0.20
+				supply_consumption_factor = -0.05
+				army_morale_factor = -0.05
+			}
+		}
+
+		weakened_tiger = {
+
+			modifier = {
+				defence = -0.20
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = -0.10
+				conscription_factor = -0.05				
+				MONTHLY_POPULATION = -0.05
+			}
+
+		}
+	}
+
+
+
+}
