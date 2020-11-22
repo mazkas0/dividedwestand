@@ -330,12 +330,3 @@ ideologies = {
 		ai_fascist = yes 
 	}
 }
-#anarchism
-#socialism
-#blanquism
-#liberal
-#centrism
-#conservatism
-#monarchism
-#oligarchy
-#ultranationalism
