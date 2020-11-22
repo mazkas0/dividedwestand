@@ -9,4 +9,4 @@ tags={
 	"Events"
 }
 name="Divided We Stand"
-supported_version="1.10.1"
+supported_version="1.10.2"
