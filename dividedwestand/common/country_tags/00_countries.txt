@@ -19,6 +19,7 @@ NHO = "countries/NewHolland.txt"
 
 SHA = "countries/Shanghai.txt"
 HEJ = "countries/Hejaz.txt"
+IND = "countries/India.txt"
 
 
 #--------------------------
