@@ -42,7 +42,7 @@ set_popularities = {
 }
 
 set_politics = {
-	ruling_party = 
+	ruling_party = oligarchy
 	last_election = "1932.11.8"
 	election_frequency = 48
 	elections_allowed = no
