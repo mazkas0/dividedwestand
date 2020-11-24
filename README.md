@@ -3,10 +3,11 @@ A Hearts of Iron IV mod
 ## Dev Team
 - mazkas (Mod Creator/Developer Lead)
 - mcarr9 (Senior Developer)
+- Genosse Niekisch (Senior Developer)
 - cornlover (Developer)
-- Genosse Niekisch (Developer)
-- TacoHell (Junior Developer)
+- TacoHell (Developer)
 - Seved the Driets (Junior Developer)
+- KaiserAugustus (Junior Developer)
 
 Created by mazkas
 ### How to Install
