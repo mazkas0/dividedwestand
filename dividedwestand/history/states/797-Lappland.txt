@@ -9,8 +9,8 @@ state = {
     }
     
     history = {
-        owner = SWE
-	add_core_of = FIN
+        owner = OTB
+	add_core_of = OTB
            
         }
     
