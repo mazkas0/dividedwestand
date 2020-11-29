@@ -5612,8 +5612,8 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_idea_weakened_tiger"
-		texturefile = "gfx/interface/ideas/weakened_tiger.dds"
+		name = "GFX_idea_weakened_eagle"
+		texturefile = "gfx/interface/ideas/weakened_eagle.dds"
 	}
 
 }
