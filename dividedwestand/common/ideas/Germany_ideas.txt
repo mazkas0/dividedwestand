@@ -1,0 +1,66 @@
+ideas = {
+
+	country = {
+		border_clashes = {
+
+			modifier = {
+				political_power_factor = -0.50
+				conscription_factor = -0.10
+				offence = -0.20
+				supply_consumption_factor = -0.05
+				army_morale_factor = -0.05
+			}
+		}
+
+		weakened_tiger = {
+
+			modifier = {
+				defence = -0.20
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = -0.10
+				ultranationalism_drift = 0.01
+			}
+
+		}
+
+		political_gridlock = {
+
+			modifier = {
+				drift_defence_factor = -50.00
+				political_power_gain = -1.00
+				stability = -0.10
+				conscription_factor = -5.00
+				research_speed_factor = -0.30
+				political_advisor_cost_factor =
+				trade_laws_cost_factor = 
+				economy_cost_factor =
+				mobilization_laws = 
+			}
+
+		}
+		
+		
+		organized_resistance = {
+
+			modifier = {
+				stability = -0.10
+				war_support_weekly = 
+				defence = -0.10
+				offence = -0.10
+				consumer_goods_factor = 0.05
+			}
+		}
+
+
+		party_hatred = {
+
+			modifier = {
+				drift_defence_factor = -50.00
+				research_speed_factor = -0.1
+				conscription_factor = -0.10
+				political_power_factor = -0.10
+			}
+		}		
+
+	}
+}
