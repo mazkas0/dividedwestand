@@ -12,7 +12,7 @@ ideas = {
 			}
 		}
 
-		weakened_tiger = {
+		weakened_eagle = {
 
 			modifier = {
 				defence = -0.20
