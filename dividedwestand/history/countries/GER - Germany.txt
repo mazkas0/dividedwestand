@@ -34,7 +34,7 @@ add_ideas = {
 	limited_exports
 	partial_economic_mobilisation
 	border_clashes
-	weakened_tiger
+	weakened_eagle
 }
 
 set_popularities = {
