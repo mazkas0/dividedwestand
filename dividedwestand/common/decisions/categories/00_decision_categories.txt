@@ -1,0 +1,15 @@
+reintegrate_territory = {
+	icon = decision_cat_picture_1936_election
+	available = {
+		allowed = {
+			tag = GER
+			tag = HNO
+			tag = BAY
+		}
+		OR = {
+				has_completed_focus = GER_reintegrate_the_populace
+				has_completed_focus = HNO_proposal_167o_reintegrate_new_territory
+				has_completed_focus = BAY_reconstruction_and_reintegration
+		}
+	}
+}

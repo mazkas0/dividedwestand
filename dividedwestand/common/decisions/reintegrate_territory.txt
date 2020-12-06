@@ -1,0 +1,584 @@
+reintegrate_territory = {
+	reintegrate_saxony = {
+		cost = 50
+		available = {
+			NOT = {
+				has_decision = reintegrate_territory
+			}
+		}
+		visible = {
+			NOT = {
+				OR = {
+					is_core_of = GER
+					is_core_of = HNO
+				}
+				tag = BAY
+			}
+			has_full_control_of_state = 65
+		}
+		modifier = {
+			political_power_factor = -.50
+			civilian_factory_use = 5
+		}
+		days_remove = 20
+		remove_effect = {
+			add_state_core = 65
+		}
+		fire_only_once = yes
+	}
+	reintegrate_thuringia = {
+		cost = 50
+		available = {
+			NOT = {
+				has_decision = reintegrate_territory
+			}
+		}
+		visible = {
+			NOT = {
+				OR = {
+					is_core_of = GER
+					is_core_of = HNO
+				}
+				tag = BAY				
+			}
+			has_full_control_of_state = 60
+		}
+		modifier = {
+			political_power_factor = -.50
+			civilian_factory_use = 5
+		}
+		days_remove = 20
+		remove_effect = {
+			add_state_core = 60
+		}
+		fire_only_once = yes
+	}
+	reintegrate_franken = {
+		cost = 50
+		available = {
+			NOT = {
+				has_decision = reintegrate_territory
+			}
+		}
+		visible = {
+			NOT = {
+				OR = {
+					is_core_of = GER
+					is_core_of = HNO
+				}
+				tag = BAY
+			}
+			has_full_control_of_state = 54
+		}
+		modifier = {
+			political_power_factor = -.50
+			civilian_factory_use = 5
+		}
+		days_remove = 20
+		remove_effect = {
+			add_state_core = 54
+		}
+		fire_only_once = yes
+	}
+	reintegrate_bavaria= {
+		cost = 50
+		available = {
+			NOT = {
+				has_decision = reintegrate_territory
+			}
+		}
+		visible = {
+			NOT = {
+				OR = {
+					is_core_of = GER
+					is_core_of = HNO
+				}
+				tag = BAY
+			}
+			has_full_control_of_state = 53
+			has_full_control_of_state = 52
+		}
+		modifier = {
+			political_power_factor = -.50
+			civilian_factory_use = 5
+		}
+		days_remove = 20
+		remove_effect = {
+			add_state_core = 53
+			add_state_core = 52
+		}
+		fire_only_once = yes
+	}
+	reintegrate_baden_wurrtemburg= {
+		cost = 50
+		available = {
+			NOT = {
+				has_decision = reintegrate_territory
+			}
+		}
+		visible = {
+			NOT = {
+				OR = {
+					is_core_of = GER
+					is_core_of = HNO
+				}
+				tag = BAY
+			}
+			has_full_control_of_state = 835
+			has_full_control_of_state = 50
+		}
+		modifier = {
+			political_power_factor = -.50
+			civilian_factory_use = 5
+		}
+		days_remove = 20
+		remove_effect = {
+			add_state_core = 835
+			add_state_core = 50
+		}
+		fire_only_once = yes
+	}
+	reintegrate_alsace= {
+		cost = 50
+		available = {
+			NOT = {
+				has_decision = reintegrate_territory
+			}
+		}
+		visible = {
+			NOT = {
+				OR = {
+					is_core_of = GER
+					is_core_of = HNO
+				}
+				tag = BAY
+			}
+			has_full_control_of_state = 802
+		}
+		modifier = {
+			political_power_factor = -.50
+			civilian_factory_use = 5
+		}
+		days_remove = 20
+		remove_effect = {
+			add_state_core = 802
+		}
+		fire_only_once = yes
+	}
+	reintegrate_frankfurt= {
+		cost = 50
+		available = {
+			NOT = {
+				has_decision = reintegrate_territory
+			}
+		}
+		visible = {
+			NOT = {
+				OR = {
+					is_core_of = GER
+					is_core_of = HNO
+				}
+				tag = BAY
+			
+			}
+			has_full_control_of_state = 801
+		}
+		modifier = {
+			political_power_factor = -.50
+			civilian_factory_use = 5
+		}
+		days_remove = 20
+		remove_effect = {
+			add_state_core = 801
+		}
+		fire_only_once = yes
+	}
+	reintegrate_moselland= {
+		cost = 50
+		available = {
+			NOT = {
+				has_decision = reintegrate_territory
+			}
+		}
+		visible = {
+			NOT = {
+				OR = {
+					is_core_of = GER
+					is_core_of = BAY
+				}
+			}
+			AND = {
+				has_full_control_of_state = 42
+				has_full_control_of_state = 829
+			}
+		}
+		modifier = {
+			political_power_factor = -.50
+			civilian_factory_use = 5
+		}
+		days_remove = 20
+		remove_effect = {
+			add_state_core = 42
+			add_state_core = 829
+		}
+		fire_only_once = yes
+	}
+	reintegrate_rhineland= {
+		cost = 50
+		available = {
+			NOT = {
+				has_decision = reintegrate_territory
+			}
+		}
+		visible = {
+			NOT = {
+				OR = {
+					is_core_of = GER
+					is_core_of = BAY
+				}
+			}
+			AND = {
+				has_full_control_of_state = 839
+				has_full_control_of_state = 51
+				has_full_control_of_state = 828 
+			}
+		}
+		modifier = {
+			political_power_factor = -.50
+			civilian_factory_use = 5
+		}
+		days_remove = 20
+		remove_effect = {
+			add_state_core = 839
+			add_state_core = 51
+			add_state_core = 828
+		}
+		fire_only_once = yes
+	}
+	reintegrate_hessen = {
+		cost = 50
+		available = {
+			NOT = {
+				has_decision = reintegrate_territory
+			}
+		}
+		visible = {
+			NOT = {
+				OR = {
+					is_core_of = GER
+					is_core_of = BAY
+				}
+			}
+			AND = {
+				has_full_control_of_state = 55
+			}
+		}
+		modifier = {
+			political_power_factor = -.50
+			civilian_factory_use = 5
+		}
+		days_remove = 20
+		remove_effect = {
+			add_state_core = 55
+		}
+		fire_only_once = yes
+	}
+	reintegrate_hannover= {
+		cost = 50
+		available = {
+			NOT = {
+				has_decision = reintegrate_territory
+			}
+		}
+		visible = {
+			NOT = {
+				OR = {
+					is_core_of = GER
+					is_core_of = BAY
+				}
+			}
+			AND = {
+				has_full_control_of_state = 59
+			}
+		}
+		modifier = {
+			political_power_factor = -.50
+			civilian_factory_use = 5
+		}
+		days_remove = 20
+		remove_effect = {
+			add_state_core = 59
+		}
+		fire_only_once = yes
+	}
+	reintegrate_westfalen= {
+		cost = 50
+		available = {
+			NOT = {
+				has_decision = reintegrate_territory
+			}
+		}
+		visible = {
+			NOT = {
+				OR = {
+					is_core_of = GER
+					is_core_of = BAY
+				}
+			}
+			AND = {
+				has_full_control_of_state = 57
+			}
+		}
+		modifier = {
+			political_power_factor = -.50
+			civilian_factory_use = 5
+		}
+		days_remove = 20
+		remove_effect = {
+			add_state_core = 57
+		}
+		fire_only_once = yes
+	}
+	reintegrate_weser_ems = {
+		cost = 50
+		available = {
+			NOT = {
+				has_decision = reintegrate_territory
+			}
+		}
+		visible = {
+			NOT = {
+				OR = {
+					is_core_of = GER
+					is_core_of = BAY
+				}
+			}
+			AND = {
+				has_full_control_of_state = 56
+			}
+		}
+		modifier = {
+			political_power_factor = -.50
+			civilian_factory_use = 5
+		}
+		days_remove = 20
+		remove_effect = {
+			add_state_core = 56
+		}
+		fire_only_once = yes
+	}
+	reintegrate_schleswig_holstein= {
+		cost = 50
+		available = {
+			NOT = {
+				has_decision = reintegrate_territory
+			}
+		}
+		visible = {
+			NOT = {
+				OR = {
+					is_core_of = GER
+					is_core_of = BAY
+				}
+			}
+			AND = {
+				has_full_control_of_state = 830
+				has_full_control_of_state = 58 
+			}
+		}
+		modifier = {
+			political_power_factor = -.50
+			civilian_factory_use = 5
+		}
+		days_remove = 20
+		remove_effect = {
+			add_state_core = 830
+			add_state_core = 58
+		}
+		fire_only_once = yes
+	}
+	reintegrate_mecklenburg= {
+		cost = 50
+		available = {
+			NOT = {
+				has_decision = reintegrate_territory
+			}
+		}
+		visible = {
+			NOT = {
+				OR = {
+					is_core_of = HNO
+					is_core_of = BAY
+				}
+				tag = GER
+			}
+			AND = {
+				has_full_control_of_state = 61
+			}
+		}
+		modifier = {
+			political_power_factor = -.50
+			civilian_factory_use = 5
+		}
+		days_remove = 20
+		remove_effect = {
+			add_state_core = 61
+		}
+		fire_only_once = yes
+	}
+	reintegrate_brandenburg= {
+		cost = 50
+		available = {
+			NOT = {
+				has_decision = reintegrate_territory
+			}
+		}
+		visible = {
+			NOT = {
+				OR = {
+					is_core_of = HNO
+					is_core_of = BAY
+				}
+				tag = GER
+			}
+			AND = {
+				has_full_control_of_state = 64
+			}
+		}
+		modifier = {
+			political_power_factor = -.50
+			civilian_factory_use = 5
+		}
+		days_remove = 20
+		remove_effect = {
+			add_state_core = 64
+		}
+		fire_only_once = yes
+	}
+	reintegrate_pomerania= {
+		cost = 50
+		available = {
+			NOT = {
+				has_decision = reintegrate_territory
+			}
+		}
+		visible = {
+			NOT = {
+				OR = {
+					is_core_of = HNO
+					is_core_of = BAY
+				}
+				tag = GER
+			}
+			AND = {
+				has_full_control_of_state = 62
+				has_full_control_of_state = 63
+			}
+		}
+		modifier = {
+			political_power_factor = -.50
+			civilian_factory_use = 5
+		}
+		days_remove = 20
+		remove_effect = {
+			add_state_core = 62
+			add_state_core = 63
+		}
+		fire_only_once = yes
+	}
+	reintegrate_ostmark = {
+		cost = 50
+		available = {
+			NOT = {
+				has_decision = reintegrate_territory
+			}
+		}
+		visible = {
+			NOT = {
+				OR = {
+					is_core_of = HNO
+					is_core_of = BAY
+				}
+				tag = GER
+			}
+			AND = {
+				has_full_control_of_state = 68
+			}
+		}
+		modifier = {
+			political_power_factor = -.50
+			civilian_factory_use = 5
+		}
+		days_remove = 20
+		remove_effect = {
+			add_state_core = 68
+		}
+		fire_only_once = yes
+	}
+	reintegrate_western_prussia = {
+		cost = 50
+		available = {
+			NOT = {
+				has_decision = reintegrate_territory
+			}
+		}
+		visible = {
+			NOT = {
+				OR = {
+					is_core_of = HNO
+					is_core_of = BAY
+				}
+				tag = GER
+			}
+			AND = {
+				has_full_control_of_state = 847
+				has_full_control_of_state = 85
+				has_full_control_of_state = 803
+			}
+		}
+		modifier = {
+			political_power_factor = -.50
+			civilian_factory_use = 5
+		}
+		days_remove = 20
+		remove_effect = {
+			add_state_core = 847
+			add_state_core = 85
+			add_state_core = 803
+		}
+		fire_only_once = yes
+	}
+	reintegrate_eastern_prussia= {
+		cost = 50
+		available = {
+			NOT = {
+				has_decision = reintegrate_territory
+			}
+		}
+		visible = {
+			NOT = {
+				OR = {
+					is_core_of = HNO
+					is_core_of = BAY
+				}
+				tag = GER
+			}
+			AND = {
+				has_full_control_of_state = 5
+				has_full_control_of_state = 763
+				has_full_control_of_state = 188
+			}
+		}
+		modifier = {
+			political_power_factor = -.50
+			civilian_factory_use = 5
+		}
+		days_remove = 20
+		remove_effect = {
+			add_state_core = 5
+			add_state_core = 763
+			add_state_core = 188
+		}
+		fire_only_once = yes
+	}												
+}
