@@ -5,6 +5,7 @@ PRI = "countries/Paris.txt"
 WAR = "countries/Warsaw.txt"
 SIL = "countries/Silesia.txt"
 OTB = "countries/Ostrobothnia.txt"
+PRS = "countries/Prussia.txt"
 
 #NorthAmerica
 
