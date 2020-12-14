@@ -766,3 +766,13 @@ IND = {
 	color = rgb { 255 128 0 }
 	color_ui = rgb { 255 128 0 }
 }
+
+OTB = {
+	color = rgb { 0 153 255}
+	color_ui = rgb { 0 153 255 }
+}
+PRS = {
+	color = rgb { 160 160 160}
+	color_ui = rgb { 160 160 160 }
+
+}
