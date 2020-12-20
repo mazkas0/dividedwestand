@@ -1,0 +1,1406 @@
+focus_tree = {
+	id = 3
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BAY
+		}
+	}
+	#Focus for Enshrine Our Values
+	focus = {
+		id = BAY_enshrine_our_values
+		icon = GFX_focus_generic_treaty
+		x = 7
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_zentrum_party_victory }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Red Jackboot
+	focus = {
+		id = BAY_the_red_jackboot
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		x = 30
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_referendum_in_silesia }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Refugees from France
+	focus = {
+		id = BAY_refugees_from_france
+		icon = GFX_focus_focus_fra_revolution_utmost
+		x = 8
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BAY_conference_in_vienna 
+			focus = BAY_the_enemy_of_my_enemy 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Overhaul the Bismarckian Welfare State
+	focus = {
+		id = BAY_overhaul_the_bismarckian_welfare_state
+		icon = GFX_focus_generic_self_management
+		x = 20
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_expand_public_education }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Blue Danube
+	focus = {
+		id = BAY_the_blue_danube
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 8
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_refugees_from_france }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Mercedes Bundesautobahn
+	focus = {
+		id = BAY_the_mercedes_bundesautobahn
+		icon = GFX_focus_generic_rubber
+		x = 36
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_the_frankfurtbasel_motorway }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Review Production Methods
+	focus = {
+		id = BAY_review_production_methods
+		icon = GFX_goal_generic_consumer_goods
+		x = 38
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_developing_the_green_corridor }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Establishing Economic Dominance
+	focus = {
+		id = BAY_establishing_economic_dominance
+		icon = GFX_goal_generic_production
+		x = 38
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Bull Market
+	focus = {
+		id = BAY_a_bull_market
+		icon = GFX_focus_fra_devalue_the_franc
+		x = 38
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BAY_the_mercedes_bundesautobahn 
+		}
+		prerequisite = { 
+			focus = BAY_review_production_methods 
+		}
+		prerequisite = { 
+			focus = BAY_mauserbayern 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Mauser-Bayern
+	focus = {
+		id = BAY_mauserbayern
+		icon = GFX_goal_generic_small_arms
+		x = 40
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_gearing_for_war }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Outlaw Fechanbach's Movement
+	focus = {
+		id = BAY_outlaw_fechanbachs_movement
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		x = 13
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_encourage_catholic_organizations }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Gearing for War
+	focus = {
+		id = BAY_gearing_for_war
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 40
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_establishing_economic_dominance }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Developing the "Green Corridor"
+	focus = {
+		id = BAY_developing_the_green_corridor
+		icon = GFX_focus_generic_tank_production
+		x = 38
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Rooting Out Fifth Columns
+	focus = {
+		id = BAY_rooting_out_fifth_columns
+		icon = GFX_goal_generic_attack_allies
+		x = 28
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_emergency_powers }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Expand Public Education
+	focus = {
+		id = BAY_expand_public_education
+		icon = GFX_goal_generic_scientific_exchange
+		x = 20
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BAY_the_hardliner_threat 
+			focus = BAY_left_unity 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Fortress Saxony
+	focus = {
+		id = BAY_fortress_saxony
+		icon = GFX_goal_generic_construct_military
+		x = 35
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_a_bull_market }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Clearing the Way
+	focus = {
+		id = BAY_clearing_the_way
+		icon = GFX_goal_generic_occupy_start_war
+		x = 50
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_new_artillery_developments }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Codified Army Doctine
+	focus = {
+		id = BAY_codified_army_doctine
+		icon = GFX_focus_generic_military_mission
+		x = 48
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BAY_rommels_plan 
+			focus = BAY_von_leebs_plan 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Contracts for Mauser
+	focus = {
+		id = BAY_contracts_for_mauser
+		icon = GFX_goal_generic_military_sphere
+		x = 48
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_codified_army_doctine }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Mutual Aid
+	focus = {
+		id = BAY_mutual_aid
+		icon = GFX_goal_generic_soviet_construction
+		x = 22
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_legalize_the_radical_parties }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Legalize the Radical Parties
+	focus = {
+		id = BAY_legalize_the_radical_parties
+		icon = GFX_focus_prc_agrarian_socialism
+		x = 22
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_left_unity }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Left Unity
+	focus = {
+		id = BAY_left_unity
+		icon = GFX_goal_support_communism
+		x = 22
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_a_just_germany }
+		mutually_exclusive = { focus = BAY_the_hardliner_threat }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Raids in Munich
+	focus = {
+		id = BAY_raids_in_munich
+		icon = GFX_goal_demand_sudetenland
+		x = 14
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BAY_outlaw_fechanbachs_movement 
+			focus = BAY_restrict_catholic_influence 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Restrain the Unions
+	focus = {
+		id = BAY_restrain_the_unions
+		icon = GFX_focus_spr_masters_of_our_own_fate
+		x = 18
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_the_hardliner_threat }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Eastern Provinces
+	focus = {
+		id = BAY_the_eastern_provinces
+		icon = GFX_focus_prc_infiltration
+		x = 26
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_spearhead_to_berlin }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A New Left
+	focus = {
+		id = BAY_a_new_left
+		icon = GFX_goal_generic_national_unity
+		x = 20
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BAY_the_iron_front 
+		}
+		prerequisite = { 
+			focus = BAY_mutual_aid 
+		}
+		prerequisite = { 
+			focus = BAY_overhaul_the_bismarckian_welfare_state 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Christian Democracy
+	focus = {
+		id = BAY_a_christian_democracy
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 8
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BAY_the_unity_pact 
+		}
+		prerequisite = { 
+			focus = BAY_austrian_advisors 
+		}
+		prerequisite = { 
+			focus = BAY_the_blue_danube 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Protections for Labor
+	focus = {
+		id = BAY_protections_for_labor
+		icon = GFX_goal_tripartite_pact
+		x = 21
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_spd_victory }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Crack down on the Radicals
+	focus = {
+		id = BAY_crack_down_on_the_radicals
+		icon = GFX_goal_anti_comintern_pact
+		x = 10
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_the_enemy_of_my_enemy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Combat Prussianism
+	focus = {
+		id = BAY_combat_prussianism
+		icon = GFX_focus_rom_abdicate
+		x = 6
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_conference_in_vienna }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Enemy of my Enemy
+	focus = {
+		id = BAY_the_enemy_of_my_enemy
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 10
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_a_free_germany }
+		mutually_exclusive = { focus = BAY_conference_in_vienna }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Conference in Vienna
+	focus = {
+		id = BAY_conference_in_vienna
+		icon = GFX_focus_proclaim_the_restauration_of_Austria_Hungary
+		x = 6
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_a_free_germany }
+		mutually_exclusive = { focus = BAY_the_enemy_of_my_enemy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for SPD Victory!
+	focus = {
+		id = BAY_spd_victory
+		icon = GFX_goal_generic_war_with_comintern
+		x = 20
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_the_election_of_1936 }
+		mutually_exclusive = { focus = BAY_zentrum_party_victory }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Negotiate with the Moderates
+	focus = {
+		id = BAY_negotiate_with_the_moderates
+		icon = GFX_goal_generic_forceful_treaty
+		x = 15
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_the_bavarian_problem }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Zentrum Party Victory!
+	focus = {
+		id = BAY_zentrum_party_victory
+		icon = GFX_focus_generic_the_giant_wakes
+		x = 8
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_the_election_of_1936 }
+		mutually_exclusive = { focus = BAY_spd_victory }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Laissez-Faire Outlook
+	focus = {
+		id = BAY_a_laissezfaire_outlook
+		icon = GFX_focus_mex_privatisation
+		x = 9
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_zentrum_party_victory }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Election of 1936
+	focus = {
+		id = BAY_the_election_of_1936
+		icon = GFX_goal_support_democracy
+		x = 14
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Encourage Catholic Organizations
+	focus = {
+		id = BAY_encourage_catholic_organizations
+		icon = GFX_focus_por_concordat
+		x = 13
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_talks_with_the_nobility }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Talks with the Nobility
+	focus = {
+		id = BAY_talks_with_the_nobility
+		icon = GFX_focus_generic_home_defense
+		x = 13
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BAY_a_free_germany 
+		}
+		prerequisite = { 
+			focus = BAY_secure_military_loyalty 
+		}
+		prerequisite = { 
+			focus = BAY_negotiate_with_the_moderates 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Bavarian Problem
+	focus = {
+		id = BAY_the_bavarian_problem
+		icon = GFX_focus_generic_support_the_left_right
+		x = 14
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BAY_zentrum_party_victory 
+			focus = BAY_spd_victory 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Unity Pact
+	focus = {
+		id = BAY_the_unity_pact
+		icon = GFX_focus_ger_oppose_hitler
+		x = 10
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_crack_down_on_the_radicals }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Mobility is Key
+	focus = {
+		id = BAY_mobility_is_key
+		icon = GFX_goal_generic_army_motorized
+		x = 46
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_rommels_plan }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Experiments in Market Socialism
+	focus = {
+		id = BAY_experiments_in_market_socialism
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 19
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_spd_victory }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Technical Expertise
+	focus = {
+		id = BAY_technical_expertise
+		icon = GFX_goal_generic_production2
+		x = 46
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_the_damlerbenz_prototypes }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Free Germany
+	focus = {
+		id = BAY_a_free_germany
+		icon = GFX_goal_anschluss
+		x = 8
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BAY_a_laissezfaire_outlook 
+		}
+		prerequisite = { 
+			focus = BAY_enshrine_our_values 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Just Germany
+	focus = {
+		id = BAY_a_just_germany
+		icon = GFX_focus_prc_agrarian_socialism
+		x = 20
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BAY_protections_for_labor 
+		}
+		prerequisite = { 
+			focus = BAY_experiments_in_market_socialism 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Secure Military Loyalty
+	focus = {
+		id = BAY_secure_military_loyalty
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 13
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_the_bavarian_problem }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Austrian Advisors
+	focus = {
+		id = BAY_austrian_advisors
+		icon = GFX_focus_generic_military_mission
+		x = 6
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_combat_prussianism }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Damler-Benz Prototypes
+	focus = {
+		id = BAY_the_damlerbenz_prototypes
+		icon = GFX_focus_generic_license_production
+		x = 46
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_mobility_is_key }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Elsass Complex
+	focus = {
+		id = BAY_the_elsass_complex
+		icon = GFX_goal_generic_build_tank
+		x = 48
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_contracts_for_mauser }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A deal with Fechenbach
+	focus = {
+		id = BAY_a_deal_with_fechenbach
+		icon = GFX_focus_por_workers_of_iberia
+		x = 15
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BAY_a_just_germany 
+		}
+		prerequisite = { 
+			focus = BAY_secure_military_loyalty 
+		}
+		prerequisite = { 
+			focus = BAY_negotiate_with_the_moderates 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Investments in Bavaria
+	focus = {
+		id = BAY_investments_in_bavaria
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 15
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_a_deal_with_fechenbach }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Hardliner Threat
+	focus = {
+		id = BAY_the_hardliner_threat
+		icon = GFX_focus_ger_great_red_menace
+		x = 18
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_a_just_germany }
+		mutually_exclusive = { focus = BAY_left_unity }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Iron Front
+	focus = {
+		id = BAY_the_iron_front
+		icon = GFX_goal_generic_major_alliance
+		x = 18
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_restrain_the_unions }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for For the Republic!
+	focus = {
+		id = BAY_for_the_republic
+		icon = GFX_goal_generic_demand_territory
+		x = 14
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BAY_a_christian_democracy
+			focus = BAY_raids_in_munich
+		}
+		prerequisite = { 
+			focus = BAY_a_new_left
+			focus = BAY_raids_in_munich
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Restrict Catholic Influence
+	focus = {
+		id = BAY_restrict_catholic_influence
+		icon = GFX_focus_mex_triumph_over_the_cristeros
+		x = 15
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_investments_in_bavaria }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Frankfurt–Basel Motorway
+	focus = {
+		id = BAY_the_frankfurtbasel_motorway
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 36
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_establishing_economic_dominance }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Frankfurt Schild
+	focus = {
+		id = BAY_the_frankfurt_schild
+		icon = GFX_goal_generic_air_fighter2
+		x = 37
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_a_bull_market }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Leipzig Air Base
+	focus = {
+		id = BAY_leipzig_air_base
+		icon = GFX_goal_generic_air_bomber
+		x = 39
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_a_bull_market }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Northern Lignite Deposits
+	focus = {
+		id = BAY_northern_lignite_deposits
+		icon = GFX_goal_generic_oil_refinery
+		x = 41
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_a_bull_market }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reforming the  Freie Armee
+	focus = {
+		id = BAY_reforming_the__freie_armee
+		icon = GFX_goal_generic_small_arms
+		x = 48
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Promote Innovative Officers
+	focus = {
+		id = BAY_promote_innovative_officers
+		icon = GFX_focus_generic_military_academy
+		x = 46
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_reforming_the__freie_armee }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Dietrich Line
+	focus = {
+		id = BAY_the_dietrich_line
+		icon = GFX_goal_generic_fortify_city
+		x = 48
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_reforming_the__freie_armee }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Spearhead Army Enlistment
+	focus = {
+		id = BAY_spearhead_army_enlistment
+		icon = GFX_focus_generic_manpower
+		x = 50
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_reforming_the__freie_armee }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Rommel's Plan
+	focus = {
+		id = BAY_rommels_plan
+		icon = GFX_goal_continuous_armor_production
+		x = 47
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BAY_promote_innovative_officers 
+		}
+		prerequisite = { 
+			focus = BAY_the_dietrich_line 
+		}
+		prerequisite = { 
+			focus = BAY_spearhead_army_enlistment 
+		}
+		mutually_exclusive = { focus = BAY_von_leebs_plan }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Von Leeb's Plan
+	focus = {
+		id = BAY_von_leebs_plan
+		icon = GFX_focus_chi_army_reform
+		x = 49
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BAY_promote_innovative_officers 
+		}
+		prerequisite = { 
+			focus = BAY_the_dietrich_line 
+		}
+		prerequisite = { 
+			focus = BAY_spearhead_army_enlistment 
+		}
+		mutually_exclusive = { focus = BAY_rommels_plan }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for New Artillery Developments
+	focus = {
+		id = BAY_new_artillery_developments
+		icon = GFX_goal_generic_army_artillery2
+		x = 50
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_von_leebs_plan }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Best of the Best
+	focus = {
+		id = BAY_the_best_of_the_best
+		icon = GFX_focus_eng_special_air_service
+		x = 50
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_clearing_the_way }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Ready for Action
+	focus = {
+		id = BAY_ready_for_action
+		icon = GFX_focus_generic_combined_arms
+		x = 48
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BAY_technical_expertise 
+		}
+		prerequisite = { 
+			focus = BAY_the_elsass_complex 
+		}
+		prerequisite = { 
+			focus = BAY_the_best_of_the_best 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Importance of Air
+	focus = {
+		id = BAY_the_importance_of_air
+		icon = GFX_goal_generic_air_fighter2
+		x = 57
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Mass Production
+	focus = {
+		id = BAY_mass_production
+		icon = GFX_goal_continuous_air_production
+		x = 57
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_the_importance_of_air }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Import Occitanian Designs
+	focus = {
+		id = BAY_import_occitanian_designs
+		icon = GFX_focus_fra_regiment_normandie
+		x = 55
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_mass_production }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Supporting the  Freie Armee
+	focus = {
+		id = BAY_supporting_the__freie_armee
+		icon = GFX_focus_YUG_rogozarski
+		x = 55
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_import_occitanian_designs }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Total Superiority
+	focus = {
+		id = BAY_total_superiority
+		icon = GFX_focus_chi_flying_tigers
+		x = 55
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_supporting_the__freie_armee }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for RADAR Development
+	focus = {
+		id = BAY_radar_development
+		icon = GFX_goal_generic_radar
+		x = 57
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_mass_production }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Bombing en Masse
+	focus = {
+		id = BAY_bombing_en_masse
+		icon = GFX_goal_generic_air_naval_bomber
+		x = 59
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_mass_production }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Experiments in Rocketry
+	focus = {
+		id = BAY_experiments_in_rocketry
+		icon = GFX_focus_rocketry
+		x = 59
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_bombing_en_masse }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Total Destruction
+	focus = {
+		id = BAY_total_destruction
+		icon = GFX_focus_usa_escort_fighters
+		x = 59
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_experiments_in_rocketry }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Free Skies
+	focus = {
+		id = BAY_the_free_skies
+		icon = GFX_goal_generic_air_fighter2
+		x = 57
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BAY_total_superiority 
+		}
+		prerequisite = { 
+			focus = BAY_total_destruction 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Kaiser's Tyranny
+	focus = {
+		id = BAY_the_kaisers_tyranny
+		icon = GFX_focus_rom_abdicate
+		x = 26
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_referendum_in_silesia }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Kaiser Question
+	focus = {
+		id = BAY_the_kaiser_question
+		icon = GFX_focus_rom_handle_king
+		x = 26
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_the_eastern_provinces }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reunification and the Bundestag
+	focus = {
+		id = BAY_reunification_and_the_bundestag
+		icon = GFX_goal_generic_propaganda
+		x = 28
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Link with Rhenish Resistance
+	focus = {
+		id = BAY_link_with_rhenish_resistance
+		icon = GFX_goal_generic_dangerous_deal
+		x = 30
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_the_red_jackboot }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Referendum in Silesia
+	focus = {
+		id = BAY_referendum_in_silesia
+		icon = GFX_goal_generic_national_unity
+		x = 28
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_reunification_and_the_bundestag }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Integrated Command Structure
+	focus = {
+		id = BAY_integrated_command_structure
+		icon = GFX_focus_generic_military_mission
+		x = 28
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_referendum_in_silesia }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Emergency Powers
+	focus = {
+		id = BAY_emergency_powers
+		icon = GFX_goal_generic_forceful_treaty
+		x = 28
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_integrated_command_structure }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Spearhead to Berlin
+	focus = {
+		id = BAY_spearhead_to_berlin
+		icon = GFX_focus_usa_focus_on_europe
+		x = 26
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_the_kaisers_tyranny }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Besieging Hamburg
+	focus = {
+		id = BAY_besieging_hamburg
+		icon = GFX_focus_spr_crush_the_revolution
+		x = 30
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_link_with_rhenish_resistance }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Cologne Trials
+	focus = {
+		id = BAY_the_cologne_trials
+		icon = GFX_focus_CZE_german_puppet
+		x = 30
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_besieging_hamburg }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reconstruction and Reintegration
+	focus = {
+		id = BAY_reconstruction_and_reintegration
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 28
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = BAY_rooting_out_fifth_columns 
+			focus = BAY_besieging_hamburg 
+			focus = BAY_the_eastern_provinces 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Dealing with the French
+	focus = {
+		id = BAY_dealing_with_the_french
+		icon = GFX_focus_attack_france
+		x = 28
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_reconstruction_and_reintegration }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Republic Secured
+	focus = {
+		id = BAY_the_republic_secured
+		icon = GFX_focus_generic_the_giant_wakes
+		x = 28
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = BAY_dealing_with_the_french }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#End of focuses 
+ }

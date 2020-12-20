@@ -1,0 +1,620 @@
+focus_tree = {
+	id = 4
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = WAR
+		}
+	}
+	#Focus for A friend in need...
+	focus = {
+		id = WAR_a_friend_in_need
+		icon = GFX_goal_generic_attack_allies
+		x = 15
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = WAR_open_up_our_borders }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Improving on our infrastructure"
+	focus = {
+		id = WAR_improving_on_our_infrastructure
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 25
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = WAR_new_industry }
+	}
+
+	#Focus for Military build-up"
+	focus = {
+		id = WAR_military_buildup
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 23
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = WAR_german_support }
+	}
+
+	#Focus for Establishing The Princess' role
+	focus = {
+		id = WAR_establishing_the_princess_role
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 21
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = WAR_unite_the_poles }
+	}
+
+	#Focus for May the Proletariats reign never end!
+	focus = {
+		id = WAR_may_the_proletariats_reign_never_end
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 22
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = WAR_decide_the_future }
+		mutually_exclusive = { 
+			focus = WAR_mother_anarchy_loves_her_sons 
+		}
+		mutually_exclusive = { 
+			focus = WAR_break_your_chains 
+		}
+		mutually_exclusive = { 
+			focus = WAR_ 
+		}
+	}
+
+	#Focus for Send a letter to the French
+	focus = {
+		id = WAR_send_a_letter_to_the_french
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 17
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = WAR_form_the_union_of_equal_slavs }
+		mutually_exclusive = { focus = WAR_open_up_our_borders }
+	}
+
+	#Focus for Form the Union of Equal Slavs
+	focus = {
+		id = WAR_form_the_union_of_equal_slavs
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 18
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = WAR_importing_socialism }
+	}
+
+	#Focus for Unite the Poles!
+	focus = {
+		id = WAR_unite_the_poles
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 21
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = WAR_exporting_monarchism }
+	}
+
+	#Focus for Reclaim our peoples' lands
+	focus = {
+		id = WAR_reclaim_our_peoples_lands
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 5
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = WAR_storm_the_royal_palace }
+	}
+
+	#Focus for Establishing the Warsaw Republic
+	focus = {
+		id = WAR_establishing_the_warsaw_republic
+		icon = GFX_goal_support_democracy
+		x = 15
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = WAR_request_international_support }
+	}
+
+	#Focus for Open up our borders
+	focus = {
+		id = WAR_open_up_our_borders
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 15
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = WAR_form_the_union_of_equal_slavs 
+			focus = WAR_establishing_the_warsaw_republic 
+		}
+		mutually_exclusive = { focus = WAR_send_a_letter_to_the_french }
+	}
+
+	#Focus for Change to a Dual-Monarchy
+	focus = {
+		id = WAR_change_to_a_dualmonarchy
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 11
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = WAR_force_their_hand 
+		}
+		prerequisite = { 
+			focus = WAR_pop_the_question 
+		}
+		mutually_exclusive = { focus = WAR_move_towards_a_constitutionalmonarchy }
+	}
+
+	#Focus for Force their hand
+	focus = {
+		id = WAR_force_their_hand
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 13
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = WAR_for_the_kaiser }
+		mutually_exclusive = { focus = WAR_pop_the_question }
+	}
+
+	#Focus for Power of The Union
+	focus = {
+		id = WAR_power_of_the_union
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 9
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = WAR_a_new_path_forward }
+	}
+
+	#Focus for Pop the question
+	focus = {
+		id = WAR_pop_the_question
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 11
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = WAR_for_the_kaiser }
+		mutually_exclusive = { focus = WAR_force_their_hand }
+	}
+
+	#Focus for For the Kaiser!
+	focus = {
+		id = WAR_for_the_kaiser
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 11
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = WAR_listen_to_the_monarchists }
+		mutually_exclusive = { 
+			focus = WAR_the_fuhers_insurrection 
+		}
+		mutually_exclusive = { 
+			focus = WAR_a_new_path_forward 
+		}
+	}
+
+	#Focus for Exporting Monarchism
+	focus = {
+		id = WAR_exporting_monarchism
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 20
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = WAR_remind_the_people_of_our_polish_ties }
+		mutually_exclusive = { focus = WAR_importing_socialism }
+	}
+
+	#Focus for Naval Force"
+	focus = {
+		id = WAR_naval_force
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 30
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = WAR_establishing_the_three_arms }
+	}
+
+	#Focus for Land Force"
+	focus = {
+		id = WAR_land_force
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 32
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = WAR_establishing_the_three_arms }
+	}
+
+	#Focus for Convert our neighbors
+	focus = {
+		id = WAR_convert_our_neighbors
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 3
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = WAR_storm_the_royal_palace }
+	}
+
+	#Focus for German support"
+	focus = {
+		id = WAR_german_support
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 23
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = WAR_dealing_with_the_economy }
+		mutually_exclusive = { focus = WAR_new_industry }
+	}
+
+	#Focus for Ideological purity in The Party
+	focus = {
+		id = WAR_ideological_purity_in_the_party
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 7
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = WAR_storm_the_royal_palace }
+	}
+
+	#Focus for Storm The Royal Palace
+	focus = {
+		id = WAR_storm_the_royal_palace
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 7
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = WAR_the_fuhers_insurrection }
+	}
+
+	#Focus for Request international support
+	focus = {
+		id = WAR_request_international_support
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 15
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = WAR_strive_for_greater_independence }
+		mutually_exclusive = { focus = WAR_ask_them_nicely }
+	}
+
+	#Focus for Submission to the Germans
+	focus = {
+		id = WAR_submission_to_the_germans
+		icon = GFX_focus_CZE_german_puppet
+		x = 9
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = WAR_assessing_our_situation }
+	}
+
+	#Focus for Remind the people of our Polish ties!
+	focus = {
+		id = WAR_remind_the_people_of_our_polish_ties
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 19
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = WAR_assessing_our_situation }
+	}
+
+	#Focus for Assessing our situation
+	focus = {
+		id = WAR_assessing_our_situation
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 14
+		y = 0
+		cost = 5
+		available_if_capitulated = yes
+	}
+
+	#Focus for Decide the future
+	focus = {
+		id = WAR_decide_the_future
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 20
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = WAR_form_the_union_of_equal_slavs }
+	}
+
+	#Focus for Mother Anarchy loves her sons!
+	focus = {
+		id = WAR_mother_anarchy_loves_her_sons
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 18
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = WAR_decide_the_future }
+		mutually_exclusive = { 
+			focus = WAR_break_your_chains 
+		}
+		mutually_exclusive = { 
+			focus = WAR_may_the_proletariats_reign_never_end 
+		}
+	}
+
+	#Focus for Break your chains!
+	focus = {
+		id = WAR_break_your_chains
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 20
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = WAR_decide_the_future }
+		mutually_exclusive = { 
+			focus = WAR_may_the_proletariats_reign_never_end 
+		}
+		mutually_exclusive = { 
+			focus = WAR_mother_anarchy_loves_her_sons 
+		}
+		mutually_exclusive = { 
+			focus = WAR_ 
+		}
+	}
+
+	#Focus for Ask them nicely
+	focus = {
+		id = WAR_ask_them_nicely
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 13
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = WAR_strive_for_greater_independence }
+		mutually_exclusive = { focus = WAR_request_international_support }
+	}
+
+	#Focus for Establishing the three arms"
+	focus = {
+		id = WAR_establishing_the_three_arms
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 32
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = WAR_reorganizing_the_army }
+	}
+
+	#Focus for Dealing with the economy"
+	focus = {
+		id = WAR_dealing_with_the_economy
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 25
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+	}
+
+	#Focus for Civilian build-up"
+	focus = {
+		id = WAR_civilian_buildup
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 27
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = WAR_german_support }
+	}
+
+	#Focus for New industry"
+	focus = {
+		id = WAR_new_industry
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 27
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = WAR_dealing_with_the_economy }
+		mutually_exclusive = { focus = WAR_german_support }
+	}
+
+	#Focus for Reorganizing the army"
+	focus = {
+		id = WAR_reorganizing_the_army
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 32
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+	}
+
+	#Focus for Air Force"
+	focus = {
+		id = WAR_air_force
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 34
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = WAR_establishing_the_three_arms }
+	}
+
+	#Focus for Cooperation with the Germans
+	focus = {
+		id = WAR_cooperation_with_the_germans
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 14
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = WAR_assessing_our_situation }
+	}
+
+	#Focus for Move towards a Constitutional-Monarchy
+	focus = {
+		id = WAR_move_towards_a_constitutionalmonarchy
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 13
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = WAR_force_their_hand }
+		mutually_exclusive = { focus = WAR_change_to_a_dualmonarchy }
+	}
+
+	#Focus for A new path forward!
+	focus = {
+		id = WAR_a_new_path_forward
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 9
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = WAR_listen_to_the_nationalists 
+		}
+		prerequisite = { 
+			focus = WAR_listen_to_the_monarchists 
+		}
+		mutually_exclusive = { 
+			focus = WAR_for_the_kaiser 
+		}
+		mutually_exclusive = { 
+			focus = WAR_the_fuhers_insurrection 
+		}
+		mutually_exclusive = { 
+			focus = WAR_ 
+		}
+	}
+
+	#Focus for The Fuhers Insurrection
+	focus = {
+		id = WAR_the_fuhers_insurrection
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 7
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = WAR_listen_to_the_nationalists }
+		mutually_exclusive = { 
+			focus = WAR_for_the_kaiser 
+		}
+		mutually_exclusive = { 
+			focus = WAR_a_new_path_forward 
+		}
+	}
+
+	#Focus for Listen to the Monarchists
+	focus = {
+		id = WAR_listen_to_the_monarchists
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 11
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = WAR_changing_the_national_identity }
+	}
+
+	#Focus for Listen to the Nationalists
+	focus = {
+		id = WAR_listen_to_the_nationalists
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 7
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = WAR_radicalising_the_population }
+	}
+
+	#Focus for Changing the national identity
+	focus = {
+		id = WAR_changing_the_national_identity
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 10
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = WAR_submission_to_the_germans }
+	}
+
+	#Focus for Radicalising the population
+	focus = {
+		id = WAR_radicalising_the_population
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 8
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = WAR_submission_to_the_germans }
+	}
+
+	#Focus for Strive for greater independence
+	focus = {
+		id = WAR_strive_for_greater_independence
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 14
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = WAR_cooperation_with_the_germans }
+	}
+
+	#Focus for Importing Socialism
+	focus = {
+		id = WAR_importing_socialism
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 18
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = WAR_remind_the_people_of_our_polish_ties }
+		mutually_exclusive = { focus = WAR_exporting_monarchism }
+	}
+
+	#Focus for Consolidating The Union
+	focus = {
+		id = WAR_consolidating_the_union
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 9
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = WAR_power_of_the_union }
+	}
+
+	#Focus for Get back The Polish Princess
+	focus = {
+		id = WAR_get_back_the_polish_princess
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 13
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = WAR_ask_them_nicely }
+	}
+
+#End of focuses 
+ }

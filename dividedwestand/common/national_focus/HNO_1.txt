@@ -1,0 +1,868 @@
+focus_tree = {
+	id = 1
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = HNO
+		}
+	}
+	#Focus for Ensure Election Security
+	focus = {
+		id = HNO_ensure_election_security
+		icon = GFX_goal_generic_defence
+		x = 4
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HNO_continue_the_elections }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Steal Weaponry
+	focus = {
+		id = HNO_steal_weaponry
+		icon = GFX_goal_generic_small_arms
+		x = 20
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HNO_denounce_free_elections }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Denounce Free Elections
+	focus = {
+		id = HNO_denounce_free_elections
+		icon = GFX_focus_usa_voter_registration_act
+		x = 20
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HNO_prepare_the_coup }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for March on Hamburg
+	focus = {
+		id = HNO_march_on_hamburg
+		icon = GFX_focus_YUG_pan_slavic_congress
+		x = 20
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = HNO_gain_military_support 
+		}
+		prerequisite = { 
+			focus = HNO_train_volunteers 
+		}
+		prerequisite = { 
+			focus = HNO_spread_rumors 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Bribe Military Officials
+	focus = {
+		id = HNO_bribe_military_officials
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		x = 18
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HNO_gain_supporters }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Sew Division in the Party
+	focus = {
+		id = HNO_sew_division_in_the_party
+		icon = GFX_goal_anti_comintern_pact
+		x = 22
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HNO_denounce_free_elections }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Refurbish Old Equipment
+	focus = {
+		id = HNO_refurbish_old_equipment
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 20
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HNO_steal_weaponry }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Incite Revolutionary Fervor
+	focus = {
+		id = HNO_incite_revolutionary_fervor
+		icon = GFX_goal_generic_political_pressure
+		x = 13
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = HNO_assassinate_opponents 
+			focus = HNO_the_organization_of_german_autonomous_collectives 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Meet with the German Socialist Party
+	focus = {
+		id = HNO_meet_with_the_german_socialist_party
+		icon = GFX_goal_generic_improve_relations
+		x = 12
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = HNO_encourage_political_activity 
+		}
+		prerequisite = { 
+			focus = HNO_incite_revolutionary_fervor 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Prepare the Coup
+	focus = {
+		id = HNO_prepare_the_coup
+		icon = GFX_goal_generic_war_with_comintern
+		x = 20
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		mutually_exclusive = { 
+			focus = HNO_continue_the_elections 
+		}
+		mutually_exclusive = { 
+			focus = HNO_stall_the_elections 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Continue the Elections
+	focus = {
+		id = HNO_continue_the_elections
+		icon = GFX_focus_prc_agrarian_socialism
+		x = 4
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		mutually_exclusive = { 
+			focus = HNO_prepare_the_coup 
+		}
+		mutually_exclusive = { 
+			focus = HNO_stall_the_elections 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Gain Supporters
+	focus = {
+		id = HNO_gain_supporters
+		icon = GFX_goal_generic_dangerous_deal
+		x = 18
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = HNO_denounce_free_elections 
+			focus = HNO_revolt 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Expose Corrupt Party Members
+	focus = {
+		id = HNO_expose_corrupt_party_members
+		icon = GFX_focus_generic_join_comintern
+		x = 22
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HNO_sew_division_in_the_party }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Train Volunteers
+	focus = {
+		id = HNO_train_volunteers
+		icon = GFX_focus_prc_infiltration
+		x = 20
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HNO_refurbish_old_equipment }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Spread Rumors
+	focus = {
+		id = HNO_spread_rumors
+		icon = GFX_focus_generic_soviet_politics
+		x = 22
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HNO_expose_corrupt_party_members }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Gain Military Support
+	focus = {
+		id = HNO_gain_military_support
+		icon = GFX_goal_generic_army_tanks
+		x = 18
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HNO_bribe_military_officials }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for template (REMOVE)
+	focus = {
+		id = HNO_template_remove
+		icon = GFX_goal_unknown
+		x = 63
+		y = 17
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Arrest Wilhelm Pieck
+	focus = {
+		id = HNO_arrest_wilhelm_pieck
+		icon = GFX_goal_generic_war_with_comintern
+		x = 6
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HNO_suppress_blanquists }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Encourage Voter Participation
+	focus = {
+		id = HNO_encourage_voter_participation
+		icon = GFX_goal_generic_national_unity
+		x = 2
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HNO_ensure_election_security }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Announce the Candidates
+	focus = {
+		id = HNO_announce_the_candidates
+		icon = GFX_focus_generic_soviet_politics
+		x = 4
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HNO_ensure_election_security }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Suppress Blanquists
+	focus = {
+		id = HNO_suppress_blanquists
+		icon = GFX_focus_usa_voter_registration_act
+		x = 6
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = HNO_ensure_election_security 
+			focus = HNO_compromise 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Dawn of German Socialism!
+	focus = {
+		id = HNO_the_dawn_of_german_socialism
+		icon = GFX_focus_prc_agrarian_socialism
+		x = 12
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = HNO_declare_the_new_state 
+			focus = HNO_ensure_our_dominance 
+			focus = HNO_the_new_anarchist_party 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Declare the New State
+	focus = {
+		id = HNO_declare_the_new_state
+		icon = GFX_goal_support_communism
+		x = 20
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HNO_march_on_hamburg }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Purge Voter Rolls
+	focus = {
+		id = HNO_purge_voter_rolls
+		icon = GFX_goal_generic_war_with_comintern
+		x = 2
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HNO_encourage_voter_participation }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Denounce Other Candidates
+	focus = {
+		id = HNO_denounce_other_candidates
+		icon = GFX_focus_focus_fra_revolution_utmost
+		x = 4
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HNO_announce_the_candidates }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Stall the Elections
+	focus = {
+		id = HNO_stall_the_elections
+		icon = GFX_focus_focus_fra_revolution_utmost
+		x = 12
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		mutually_exclusive = { 
+			focus = HNO_continue_the_elections 
+		}
+		mutually_exclusive = { 
+			focus = HNO_prepare_the_coup 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Ensure Our Dominance
+	focus = {
+		id = HNO_ensure_our_dominance
+		icon = GFX_goal_generic_political_pressure
+		x = 4
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HNO_for_germany }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for An Election with the Party at the Helm
+	focus = {
+		id = HNO_an_election_with_the_party_at_the_helm
+		icon = GFX_goal_support_communism
+		x = 4
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = HNO_arrest_wilhelm_pieck 
+		}
+		prerequisite = { 
+			focus = HNO_purge_voter_rolls 
+		}
+		prerequisite = { 
+			focus = HNO_denounce_other_candidates 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for For Germany!
+	focus = {
+		id = HNO_for_germany
+		icon = GFX_focus_prc_agrarian_socialism
+		x = 4
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HNO_an_election_with_the_party_at_the_helm }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Strikes!
+	focus = {
+		id = HNO_strikes
+		icon = GFX_goal_generic_demand_territory
+		x = 12
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HNO_stall_the_elections }
+		mutually_exclusive = { focus = HNO_revolt }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Revolt!
+	focus = {
+		id = HNO_revolt
+		icon = GFX_goal_generic_war_with_comintern
+		x = 15
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HNO_stall_the_elections }
+		mutually_exclusive = { focus = HNO_strikes }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Organization of German Autonomous Collectives
+	focus = {
+		id = HNO_the_organization_of_german_autonomous_collectives
+		icon = GFX_goal_generic_small_arms
+		x = 15
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HNO_revolt }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Compromise!
+	focus = {
+		id = HNO_compromise
+		icon = GFX_goal_generic_improve_relations
+		x = 9
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HNO_stall_the_elections }
+		mutually_exclusive = { 
+			focus = HNO_strikes 
+		}
+		mutually_exclusive = { 
+			focus = HNO_revolt 
+		}
+		mutually_exclusive = { 
+			focus = HNO_ 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Demand Free Elections
+	focus = {
+		id = HNO_demand_free_elections
+		icon = GFX_goal_generic_national_unity
+		x = 9
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HNO_compromise }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Gain Political Supporters
+	focus = {
+		id = HNO_gain_political_supporters
+		icon = GFX_goal_tripartite_pact
+		x = 11
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = HNO_strikes 
+			focus = HNO_compromise 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Assassinate Opponents
+	focus = {
+		id = HNO_assassinate_opponents
+		icon = GFX_focus_focus_fra_maquis
+		x = 13
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = HNO_strikes 
+			focus = HNO_revolt 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The New Anarchist Party
+	focus = {
+		id = HNO_the_new_anarchist_party
+		icon = GFX_focus_generic_join_comintern
+		x = 12
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HNO_hold_the_elections }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Encourage Political Activity
+	focus = {
+		id = HNO_encourage_political_activity
+		icon = GFX_focus_por_workers_of_iberia
+		x = 11
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = HNO_gain_political_supporters 
+			focus = HNO_demand_free_elections 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Hold the Elections
+	focus = {
+		id = HNO_hold_the_elections
+		icon = GFX_focus_generic_soviet_politics
+		x = 12
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HNO_meet_with_the_german_socialist_party }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Proposal 216A: Make Contact with Socialist Freikorps
+	focus = {
+		id = HNO_proposal_216a_make_contact_with_socialist_freikorps
+		icon = GFX_focus_generic_little_entente
+		x = 26
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HNO_proposal_170c_new_conscription_laws }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Proposal 170C: New Conscription Laws
+	focus = {
+		id = HNO_proposal_170c_new_conscription_laws
+		icon = GFX_focus_chi_army_reform
+		x = 28
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Proposal 13C: Claims on Southern Germany
+	focus = {
+		id = HNO_proposal_13c_claims_on_southern_germany
+		icon = GFX_goal_generic_position_armies
+		x = 27
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = HNO_proposal_832k_factory_conversion 
+		}
+		prerequisite = { 
+			focus = HNO_proposal_610t_emergency_powers 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Proposal 610T: Emergency Powers
+	focus = {
+		id = HNO_proposal_610t_emergency_powers
+		icon = GFX_goal_generic_war_with_comintern
+		x = 28
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HNO_proposal_97q_obtain_aging_equipment }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Create the Ministry of Reunification
+	focus = {
+		id = HNO_create_the_ministry_of_reunification
+		icon = GFX_goal_tripartite_pact
+		x = 12
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HNO_the_dawn_of_german_socialism }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Proposal 67F: Partial Mobilization
+	focus = {
+		id = HNO_proposal_67f_partial_mobilization
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 30
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HNO_proposal_170c_new_conscription_laws }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Proposal 397Q: Fuel Rationing
+	focus = {
+		id = HNO_proposal_397q_fuel_rationing
+		icon = GFX_goal_generic_oil_refinery
+		x = 30
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HNO_proposal_67f_partial_mobilization }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Proposal 97Q: Obtain Aging Equipment
+	focus = {
+		id = HNO_proposal_97q_obtain_aging_equipment
+		icon = GFX_goal_generic_neutrality_focus
+		x = 28
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HNO_proposal_170c_new_conscription_laws }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Proposal 832K: Factory Conversion
+	focus = {
+		id = HNO_proposal_832k_factory_conversion
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 26
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HNO_proposal_216a_make_contact_with_socialist_freikorps }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Proposal 12K: Claims on Eastern Germany
+	focus = {
+		id = HNO_proposal_12k_claims_on_eastern_germany
+		icon = GFX_focus_ger_oppose_hitler
+		x = 29
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = HNO_proposal_397q_fuel_rationing 
+		}
+		prerequisite = { 
+			focus = HNO_proposal_610t_emergency_powers 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for War with the Republic
+	focus = {
+		id = HNO_war_with_the_republic
+		icon = GFX_goal_generic_military_sphere
+		x = 27
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HNO_proposal_13c_claims_on_southern_germany }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for War with the Empire
+	focus = {
+		id = HNO_war_with_the_empire
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 29
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HNO_proposal_12k_claims_on_eastern_germany }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Wolfsburg Trials
+	focus = {
+		id = HNO_the_wolfsburg_trials
+		icon = GFX_focus_rom_abdicate
+		x = 28
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = HNO_war_with_the_republic 
+		}
+		prerequisite = { 
+			focus = HNO_war_with_the_empire 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Demand Silesia
+	focus = {
+		id = HNO_demand_silesia
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 27
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HNO_the_wolfsburg_trials }
+		mutually_exclusive = { focus = HNO_the_gleiwitz_compromise }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Gleiwitz Compromise
+	focus = {
+		id = HNO_the_gleiwitz_compromise
+		icon = GFX_goal_generic_improve_relations
+		x = 29
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = HNO_the_wolfsburg_trials }
+		mutually_exclusive = { focus = HNO_demand_silesia }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Proposal 167O: Reintegrate New Territory
+	focus = {
+		id = HNO_proposal_167o_reintegrate_new_territory
+		icon = GFX_goal_generic_soviet_construction
+		x = 28
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = HNO_the_gleiwitz_compromise 
+			focus = HNO_demand_silesia 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#End of focuses 
+ }

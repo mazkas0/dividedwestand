@@ -1,0 +1,339 @@
+focus_tree = {
+	id = 5
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = PRS
+		}
+	}
+	#Focus for Claims on Lithuania
+	focus = {
+		id = PRS_claims_on_lithuania
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 7
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PRS_treaty_of_knigsberg }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for March to Vilnius
+	focus = {
+		id = PRS_march_to_vilnius
+		icon = GFX_goal_generic_military_sphere
+		x = 9
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = PRS_new_prussian_army 
+		}
+		prerequisite = { 
+			focus = PRS_integrate_livonia 
+		}
+		prerequisite = { 
+			focus = PRS_claims_on_lithuania 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for End Polish Autonomy
+	focus = {
+		id = PRS_end_polish_autonomy
+		icon = GFX_goal_generic_forceful_treaty
+		x = 13
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PRS_deal_with_warsaw }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Guarantee Warsaw Independence
+	focus = {
+		id = PRS_guarantee_warsaw_independence
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 9
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PRS_integrate_livonia }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Support Livonian Resistance
+	focus = {
+		id = PRS_support_livonian_resistance
+		icon = GFX_focus_prc_infiltration
+		x = 15
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PRS_support_the_pomeranian_resistance }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Last Stand of the Kaiser
+	focus = {
+		id = PRS_last_stand_of_the_kaiser
+		icon = GFX_goal_generic_political_pressure
+		x = 11
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Fortress Konigsberg
+	focus = {
+		id = PRS_fortress_konigsberg
+		icon = GFX_goal_generic_fortify_city
+		x = 11
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PRS_last_stand_of_the_kaiser }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Pearl of the Baltic
+	focus = {
+		id = PRS_pearl_of_the_baltic
+		icon = GFX_focus_ger_return_of_the_kaiser
+		x = 8
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PRS_fortress_konigsberg }
+		mutually_exclusive = { focus = PRS_tip_of_the_tiger }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Tip of the Tiger
+	focus = {
+		id = PRS_tip_of_the_tiger
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 14
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PRS_fortress_konigsberg }
+		mutually_exclusive = { focus = PRS_pearl_of_the_baltic }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Poznan Line
+	focus = {
+		id = PRS_the_poznan_line
+		icon = GFX_goal_generic_construct_military
+		x = 7
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PRS_pearl_of_the_baltic }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Help the Baltic Germans
+	focus = {
+		id = PRS_help_the_baltic_germans
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 9
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PRS_pearl_of_the_baltic }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Build up the Baltic High Sees Fleet
+	focus = {
+		id = PRS_build_up_the_baltic_high_sees_fleet
+		icon = GFX_goal_generic_navy_battleship
+		x = 11
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = PRS_help_the_baltic_germans 
+			focus = PRS_deal_with_warsaw 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Mass Conscription
+	focus = {
+		id = PRS_mass_conscription
+		icon = GFX_goal_generic_axis_build_infantry
+		x = 15
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PRS_tip_of_the_tiger }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Integrate Livonia
+	focus = {
+		id = PRS_integrate_livonia
+		icon = GFX_goal_generic_demand_territory
+		x = 9
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PRS_help_the_baltic_germans }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Deal with Warsaw
+	focus = {
+		id = PRS_deal_with_warsaw
+		icon = GFX_goal_generic_dangerous_deal
+		x = 13
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PRS_tip_of_the_tiger }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Treaty of Königsberg
+	focus = {
+		id = PRS_treaty_of_knigsberg
+		icon = GFX_goal_molotov_ribbentrop_pact
+		x = 7
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PRS_the_poznan_line }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Support the Pomeranian Resistance
+	focus = {
+		id = PRS_support_the_pomeranian_resistance
+		icon = GFX_goal_generic_small_arms
+		x = 15
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PRS_mass_conscription }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for New Prussian Army
+	focus = {
+		id = PRS_new_prussian_army
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 11
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PRS_build_up_the_baltic_high_sees_fleet }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Secret Deal with Austria
+	focus = {
+		id = PRS_secret_deal_with_austria
+		icon = GFX_goal_molotov_ribbentrop_pact
+		x = 13
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PRS_end_polish_autonomy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Invade Brandenburg!
+	focus = {
+		id = PRS_invade_brandenburg
+		icon = GFX_goal_generic_small_arms
+		x = 13
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = PRS_new_prussian_army 
+		}
+		prerequisite = { 
+			focus = PRS_secret_deal_with_austria 
+		}
+		prerequisite = { 
+			focus = PRS_support_livonian_resistance 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A New Baltic Empire
+	focus = {
+		id = PRS_a_new_baltic_empire
+		icon = GFX_focus_generic_monarchy_1
+		x = 9
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PRS_march_to_vilnius }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Back to Germany
+	focus = {
+		id = PRS_back_to_germany
+		icon = GFX_focus_ger_oppose_hitler
+		x = 13
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PRS_invade_brandenburg }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#End of focuses 
+ }

@@ -1,0 +1,2275 @@
+focus_tree = {
+	id = AUS
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = AUS
+		}
+	}
+	#Focus for Support the True Germany
+	focus = {
+		id = AUS_support_the_true_germany
+		icon = GFX_focus_ger_oppose_hitler
+		x = 8
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_change_course_of_forgein_diplomacy }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Lessons from the Austro-Italian War
+	focus = {
+		id = AUS_lessons_from_the_austroitalian_war
+		icon = GFX_goal_generic_position_armies
+		x = 46
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_field_exercises }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Appease the Schutzbund
+	focus = {
+		id = AUS_appease_the_schutzbund
+		icon = GFX_goal_generic_major_alliance
+		x = 10
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_empower_the_reichsrat }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Adopt the MP34
+	focus = {
+		id = AUS_adopt_the_mp34
+		icon = GFX_goal_generic_small_arms
+		x = 44
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AUS_motorize_the_heer 
+			focus = AUS_develop_new_artillery 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Subjagate Italy
+	focus = {
+		id = AUS_subjagate_italy
+		icon = GFX_focus_generic_italy_first
+		x = 3
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_change_course_of_forgein_diplomacy }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Support the Real France
+	focus = {
+		id = AUS_support_the_real_france
+		icon = GFX_focus_chi_reach_out_to_france
+		x = 7
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_change_course_of_forgein_diplomacy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Alliance with Hungary
+	focus = {
+		id = AUS_alliance_with_hungary
+		icon = GFX_goal_anschluss
+		x = 2
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_seek_reaproachment_with_hungary }
+		mutually_exclusive = { focus = AUS_nonintervention_treaty }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Non-Intervention Treaty
+	focus = {
+		id = AUS_nonintervention_treaty
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 0
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_seek_reaproachment_with_hungary }
+		mutually_exclusive = { focus = AUS_alliance_with_hungary }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Expand Cruiser Production
+	focus = {
+		id = AUS_expand_cruiser_production
+		icon = GFX_focus_generic_cruiser2
+		x = 62
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_expand_ventian_docks }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Österreich beherrrscht das Meer!!
+	focus = {
+		id = AUS_sterreich_beherrrscht_das_meer
+		icon = GFX_focus_generic_navy_battleship2
+		x = 60
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_open_trieste_naval_academy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Expand Lower Austria Oil Fields
+	focus = {
+		id = AUS_expand_lower_austria_oil_fields
+		icon = GFX_goal_generic_oil_refinery
+		x = 31
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_steel_werke_linz }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Fight Unemployment
+	focus = {
+		id = AUS_fight_unemployment
+		icon = GFX_goal_generic_consumer_goods
+		x = 34
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_3phasesplan }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Support Strabag
+	focus = {
+		id = AUS_support_strabag
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 34
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_fight_unemployment }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Close the Trade
+	focus = {
+		id = AUS_close_the_trade
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 28
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_approve_starhembergs_plan }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Nationalize Forgein Industry
+	focus = {
+		id = AUS_nationalize_forgein_industry
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 25
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_approve_starhembergs_plan }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 3-Phases-Plan
+	focus = {
+		id = AUS_3phasesplan
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 35
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = AUS_approve_starhembergs_plan }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Approve Starhemberg`s Plan
+	focus = {
+		id = AUS_approve_starhembergs_plan
+		icon = GFX_goal_generic_production2
+		x = 27
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = AUS_3phasesplan }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Build the Innsbruck-Wien Highway
+	focus = {
+		id = AUS_build_the_innsbruckwien_highway
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 37
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_3phasesplan }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Prioritize Military Vehicles
+	focus = {
+		id = AUS_prioritize_military_vehicles
+		icon = GFX_goal_generic_army_motorized
+		x = 36
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_build_the_innsbruckwien_highway }
+		mutually_exclusive = { focus = AUS_a_car_for_our_people }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Integrate the Schutzbund into the Army
+	focus = {
+		id = AUS_integrate_the_schutzbund_into_the_army
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 10
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_appease_the_schutzbund }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for State Controlled Market
+	focus = {
+		id = AUS_state_controlled_market
+		icon = GFX_goal_support_fourth_int
+		x = 2
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_vereinte_sozialistische_front }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Dennounce Catholic Values
+	focus = {
+		id = AUS_dennounce_catholic_values
+		icon = GFX_focus_mex_triumph_over_the_cristeros
+		x = 0
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_vereinte_sozialistische_front }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Hold the First Elections
+	focus = {
+		id = AUS_hold_the_first_elections
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		x = 9
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AUS_encourage_creation_of_parties 
+		}
+		prerequisite = { 
+			focus = AUS_integrate_the_schutzbund_into_the_army 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Encourage Creation of Parties
+	focus = {
+		id = AUS_encourage_creation_of_parties
+		icon = GFX_focus_generic_treaty
+		x = 8
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_empower_the_reichsrat }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reinforce the Royal Austrian Federation
+	focus = {
+		id = AUS_reinforce_the_royal_austrian_federation
+		icon = GFX_goal_generic_national_unity
+		x = 21
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Contract Steyr
+	focus = {
+		id = AUS_contract_steyr
+		icon = GFX_focus_generic_tank_production
+		x = 41
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_innovate_the_armed_forces }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Motorize the Heer
+	focus = {
+		id = AUS_motorize_the_heer
+		icon = GFX_goal_generic_army_motorized
+		x = 43
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_innovate_the_armed_forces }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reintroduce Conscription Law
+	focus = {
+		id = AUS_reintroduce_conscription_law
+		icon = GFX_focus_chi_army_reform
+		x = 42
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_the_heer }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Field Exercises
+	focus = {
+		id = AUS_field_exercises
+		icon = GFX_goal_generic_army_doctrines
+		x = 46
+		y = 1
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_the_heer }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Approve Knaus Proposal
+	focus = {
+		id = AUS_approve_knaus_proposal
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 42
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_reintroduce_conscription_law }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Innovate the Armed Forces
+	focus = {
+		id = AUS_innovate_the_armed_forces
+		icon = GFX_goal_generic_army_tanks
+		x = 42
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_austrian_general_staff }
+		mutually_exclusive = { focus = AUS_traditional_warfare }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Traditional Warfare
+	focus = {
+		id = AUS_traditional_warfare
+		icon = GFX_goal_generic_army_artillery2
+		x = 46
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_austrian_general_staff }
+		mutually_exclusive = { focus = AUS_innovate_the_armed_forces }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Increase Autonomy for Boehmia
+	focus = {
+		id = AUS_increase_autonomy_for_boehmia
+		icon = GFX_goal_anschluss
+		x = 20
+		y = 3
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_integrate_silesia }
+		mutually_exclusive = { focus = AUS_annex_boehmia }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Annex Boehmia
+	focus = {
+		id = AUS_annex_boehmia
+		icon = GFX_goal_generic_forceful_treaty
+		x = 23
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_integrate_silesia }
+		mutually_exclusive = { focus = AUS_increase_autonomy_for_boehmia }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Heer
+	focus = {
+		id = AUS_the_heer
+		icon = GFX_goal_rhineland
+		x = 44
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Raid the Heer
+	focus = {
+		id = AUS_raid_the_heer
+		icon = GFX_goal_generic_political_pressure
+		x = 4
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_arbeiter_von_wien }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Approach the SPÖ
+	focus = {
+		id = AUS_approach_the_sp
+		icon = GFX_goal_generic_major_alliance
+		x = 3
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AUS_strike 
+			focus = AUS_raid_the_heer 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Dennounce Socalism
+	focus = {
+		id = AUS_dennounce_socalism
+		icon = GFX_goal_generic_war_with_comintern
+		x = 15
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_gott_erhalte_gott_beschtze }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Give the Kaiser full Power
+	focus = {
+		id = AUS_give_the_kaiser_full_power
+		icon = GFX_focus_generic_monarchy_1
+		x = 16
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_promonarchist_propaganda }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for placeholder
+	focus = {
+		id = AUS_placeholder
+		icon = GFX_goal_unknown
+		x = 92
+		y = 22
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Establish the Jugendwehr
+	focus = {
+		id = AUS_establish_the_jugendwehr
+		icon = GFX_focus_generic_military_mission
+		x = 18
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_crush_the_schutzbund }
+		search_filters = { FOCUS_FILTER_MANPOWER } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Establish Forgein Ministry
+	focus = {
+		id = AUS_establish_forgein_ministry
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 16
+		y = 8
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_give_the_kaiser_full_power }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Arbeiter von Wien
+	focus = {
+		id = AUS_arbeiter_von_wien
+		icon = GFX_goal_tfv_burn_the_royal_portraits
+		x = 3
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_repeal_ban_of_parties }
+		mutually_exclusive = { focus = AUS_empower_the_reichsrat }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Empower the Reichsrat
+	focus = {
+		id = AUS_empower_the_reichsrat
+		icon = GFX_goal_generic_neutrality_focus
+		x = 9
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_repeal_ban_of_parties }
+		mutually_exclusive = { focus = AUS_arbeiter_von_wien }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Pro-Monarchist Propaganda
+	focus = {
+		id = AUS_promonarchist_propaganda
+		icon = GFX_focus_generic_monarchy_2
+		x = 16
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AUS_dennounce_socalism 
+		}
+		prerequisite = { 
+			focus = AUS_decrease_the_reichsrats_authority 
+		}
+		prerequisite = { 
+			focus = AUS_crush_the_schutzbund 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Decrease the Reichsrats Authority
+	focus = {
+		id = AUS_decrease_the_reichsrats_authority
+		icon = GFX_focus_generic_strike_at_democracy2
+		x = 16
+		y = 2
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_gott_erhalte_gott_beschtze }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Strike!
+	focus = {
+		id = AUS_strike
+		icon = GFX_focus_YUG_pan_slavic_congress
+		x = 2
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_arbeiter_von_wien }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Approach the Schutzbund
+	focus = {
+		id = AUS_approach_the_schutzbund
+		icon = GFX_goal_generic_dangerous_deal
+		x = 6
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_reichsrat_conference }
+		mutually_exclusive = { focus = AUS_gott_erhalte_gott_beschtze }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Gott erhalte, Gott beschütze
+	focus = {
+		id = AUS_gott_erhalte_gott_beschtze
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 16
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_reichsrat_conference }
+		mutually_exclusive = { focus = AUS_approach_the_schutzbund }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reichsrat Conference
+	focus = {
+		id = AUS_reichsrat_conference
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 11
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Vereinte Sozialistische Front
+	focus = {
+		id = AUS_vereinte_sozialistische_front
+		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		x = 3
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AUS_approach_the_sp 
+		}
+		prerequisite = { 
+			focus = AUS_reinforce_the_bund 
+		}
+		prerequisite = { 
+			focus = AUS_stir_socialist_revolution 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Repeal ban of Parties
+	focus = {
+		id = AUS_repeal_ban_of_parties
+		icon = GFX_goal_generic_demand_territory
+		x = 6
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_approach_the_schutzbund }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Crush the Schutzbund
+	focus = {
+		id = AUS_crush_the_schutzbund
+		icon = GFX_goal_demand_sudetenland
+		x = 17
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_gott_erhalte_gott_beschtze }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Re-Intodruce the Ständestaat
+	focus = {
+		id = AUS_reintodruce_the_stndestaat
+		icon = GFX_focus_por_concordat
+		x = 14
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_dennounce_socalism }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reinforce the Bund
+	focus = {
+		id = AUS_reinforce_the_bund
+		icon = GFX_focus_generic_little_entente
+		x = 5
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_raid_the_heer }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Stir Socialist Revolution
+	focus = {
+		id = AUS_stir_socialist_revolution
+		icon = GFX_goal_support_communism
+		x = 1
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_strike }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Integrate Silesia
+	focus = {
+		id = AUS_integrate_silesia
+		icon = GFX_focus_generic_support_the_left_right
+		x = 21
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_reinforce_the_royal_austrian_federation }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Crush Czech Resistance
+	focus = {
+		id = AUS_crush_czech_resistance
+		icon = GFX_goal_generic_demand_territory
+		x = 23
+		y = 4
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_annex_boehmia }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Open Vienna Military Academy
+	focus = {
+		id = AUS_open_vienna_military_academy
+		icon = GFX_focus_generic_military_academy
+		x = 44
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_the_heer }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Austrian General Staff
+	focus = {
+		id = AUS_austrian_general_staff
+		icon = GFX_focus_generic_military_mission
+		x = 44
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_open_vienna_military_academy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Expand Military Fundings
+	focus = {
+		id = AUS_expand_military_fundings
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 44
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_austrian_general_staff }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Develop new Artillery
+	focus = {
+		id = AUS_develop_new_artillery
+		icon = GFX_goal_generic_army_artillery2
+		x = 45
+		y = 5
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_traditional_warfare }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Fate of the Habsburgs
+	focus = {
+		id = AUS_fate_of_the_habsburgs
+		icon = GFX_goal_generic_attack_allies
+		x = 1
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_vereinte_sozialistische_front }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reinforce the Gebirgsjäger
+	focus = {
+		id = AUS_reinforce_the_gebirgsjger
+		icon = GFX_focus_generic_manpower
+		x = 46
+		y = 6
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_traditional_warfare }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Innovate Old Doctrines
+	focus = {
+		id = AUS_innovate_old_doctrines
+		icon = GFX_goal_generic_air_doctrine
+		x = 44
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_adopt_the_mp34 }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Surpress Monarchist Setiments
+	focus = {
+		id = AUS_surpress_monarchist_setiments
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 8
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_hold_the_first_elections }
+		mutually_exclusive = { focus = AUS_compromise_with_monarchists }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Kaiser-Fabrik
+	focus = {
+		id = AUS_kaiserfabrik
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 14
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_give_the_kaiser_full_power }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Compromise with Monarchists
+	focus = {
+		id = AUS_compromise_with_monarchists
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 10
+		y = 7
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_hold_the_first_elections }
+		mutually_exclusive = { focus = AUS_surpress_monarchist_setiments }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Divines Emperor
+	focus = {
+		id = AUS_divines_emperor
+		icon = GFX_focus_hun_elect_a_king
+		x = 17
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_give_the_kaiser_full_power }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reform the May Constitution
+	focus = {
+		id = AUS_reform_the_may_constitution
+		icon = GFX_focus_generic_treaty
+		x = 17
+		y = 7
+		cost = 5
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_divines_emperor }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Build the Kaiser Railroad
+	focus = {
+		id = AUS_build_the_kaiser_railroad
+		icon = GFX_goal_generic_construction2
+		x = 13
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_kaiserfabrik }
+		mutually_exclusive = { focus = AUS_support_steyr }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Support Steyr
+	focus = {
+		id = AUS_support_steyr
+		icon = GFX_goal_generic_military_sphere
+		x = 15
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_kaiserfabrik }
+		mutually_exclusive = { focus = AUS_build_the_kaiser_railroad }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reclaim our lost Empire
+	focus = {
+		id = AUS_reclaim_our_lost_empire
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 16
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_establish_forgein_ministry }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Socialist Threat
+	focus = {
+		id = AUS_the_socialist_threat
+		icon = GFX_goal_generic_attack_allies
+		x = 19
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_reclaim_our_lost_empire }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Secrure Italy
+	focus = {
+		id = AUS_secrure_italy
+		icon = GFX_focus_attack_italy
+		x = 15
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_reclaim_our_lost_empire }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Split Italy
+	focus = {
+		id = AUS_split_italy
+		icon = GFX_goal_generic_position_armies
+		x = 15
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_secrure_italy }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Demand Bavarian Subjugation
+	focus = {
+		id = AUS_demand_bavarian_subjugation
+		icon = GFX_goal_generic_territory_or_war
+		x = 23
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_reclaim_our_lost_empire }
+		mutually_exclusive = { focus = AUS_reapproachment_with_the_german_kaiser }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Prepare for a other Brothers War
+	focus = {
+		id = AUS_prepare_for_a_other_brothers_war
+		icon = GFX_focus_ger_oppose_hitler
+		x = 22
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_demand_bavarian_subjugation }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Re-Approachment with the German Kaiser
+	focus = {
+		id = AUS_reapproachment_with_the_german_kaiser
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 21
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_reclaim_our_lost_empire }
+		mutually_exclusive = { focus = AUS_demand_bavarian_subjugation }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reintegrate Hungary
+	focus = {
+		id = AUS_reintegrate_hungary
+		icon = GFX_goal_demand_sudetenland
+		x = 17
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_the_socialist_threat }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Demand Galicia
+	focus = {
+		id = AUS_demand_galicia
+		icon = GFX_goal_generic_political_pressure
+		x = 20
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_the_socialist_threat }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A Car for our People
+	focus = {
+		id = AUS_a_car_for_our_people
+		icon = GFX_goal_generic_production2
+		x = 38
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_build_the_innsbruckwien_highway }
+		mutually_exclusive = { focus = AUS_prioritize_military_vehicles }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Steel Werke Linz
+	focus = {
+		id = AUS_steel_werke_linz
+		icon = GFX_focus_generic_steel
+		x = 31
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AUS_3phasesplan 
+			focus = AUS_approve_starhembergs_plan 
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Nationalization of Strabag
+	focus = {
+		id = AUS_nationalization_of_strabag
+		icon = GFX_goal_generic_forceful_treaty
+		x = 27
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_approve_starhembergs_plan }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Create new Jobs in the Arms Industry
+	focus = {
+		id = AUS_create_new_jobs_in_the_arms_industry
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 26
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_nationalization_of_strabag }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Public Workforce
+	focus = {
+		id = AUS_public_workforce
+		icon = GFX_goal_generic_national_unity
+		x = 28
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_nationalization_of_strabag }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Develop Wien
+	focus = {
+		id = AUS_develop_wien
+		icon = GFX_focus_spa_the_spanish_miracle
+		x = 31
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_expand_lower_austria_oil_fields }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Salzburg Industrial Center
+	focus = {
+		id = AUS_salzburg_industrial_center
+		icon = GFX_focus_spa_save_the_alcazar
+		x = 35
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AUS_support_strabag 
+			focus = AUS_a_car_for_our_people 
+			focus = AUS_prioritize_military_vehicles 
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Expand Steyr
+	focus = {
+		id = AUS_expand_steyr
+		icon = GFX_goal_generic_construction2
+		x = 26
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_create_new_jobs_in_the_arms_industry }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Bohemian Industrial Plan
+	focus = {
+		id = AUS_bohemian_industrial_plan
+		icon = GFX_goal_generic_construct_civilian
+		x = 35
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_salzburg_industrial_center }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Invite Fiat
+	focus = {
+		id = AUS_invite_fiat
+		icon = GFX_goal_generic_air_fighter2
+		x = 26
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_expand_steyr }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Expand National Industry Complexes
+	focus = {
+		id = AUS_expand_national_industry_complexes
+		icon = GFX_focus_generic_industry_1
+		x = 28
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_public_workforce }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Finish the Starhemberg Plan
+	focus = {
+		id = AUS_finish_the_starhemberg_plan
+		icon = GFX_focus_generic_industry_2
+		x = 27
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AUS_invite_fiat 
+		}
+		prerequisite = { 
+			focus = AUS_expand_national_industry_complexes 
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Breslau Fabriken
+	focus = {
+		id = AUS_breslau_fabriken
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 34
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_salzburg_industrial_center }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Increase Fundings for Hirtenberger
+	focus = {
+		id = AUS_increase_fundings_for_hirtenberger
+		icon = GFX_goal_generic_army_artillery2
+		x = 36
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_salzburg_industrial_center }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Finsih the Last Phase
+	focus = {
+		id = AUS_finsih_the_last_phase
+		icon = GFX_goal_generic_production2
+		x = 35
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AUS_breslau_fabriken 
+		}
+		prerequisite = { 
+			focus = AUS_increase_fundings_for_hirtenberger 
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for End the Economic Reforms
+	focus = {
+		id = AUS_end_the_economic_reforms
+		icon = GFX_focus_generic_industry_3
+		x = 31
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AUS_finsih_the_last_phase 
+			focus = AUS_finish_the_starhemberg_plan 
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Istrian Dockyards
+	focus = {
+		id = AUS_istrian_dockyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 31
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_develop_wien }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Expand Venetian Navy Bases
+	focus = {
+		id = AUS_expand_venetian_navy_bases
+		icon = GFX_goal_generic_navy_cruiser
+		x = 30
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_istrian_dockyards }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Increase Navy Fundings
+	focus = {
+		id = AUS_increase_navy_fundings
+		icon = GFX_goal_generic_navy_battleship
+		x = 32
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_istrian_dockyards }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Change Course of Forgein Diplomacy
+	focus = {
+		id = AUS_change_course_of_forgein_diplomacy
+		icon = GFX_goal_generic_improve_relations
+		x = 6
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AUS_vereinte_sozialistische_front 
+			focus = AUS_revise_the_constitution 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Demand Slovenia
+	focus = {
+		id = AUS_demand_slovenia
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 5
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_challange_the_eastern_bloc }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Challange the Eastern Bloc
+	focus = {
+		id = AUS_challange_the_eastern_bloc
+		icon = GFX_goal_generic_war_with_comintern
+		x = 5
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_change_course_of_forgein_diplomacy }
+		mutually_exclusive = { focus = AUS_seek_reaproachment_with_hungary }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Retake Böhmen
+	focus = {
+		id = AUS_retake_bhmen
+		icon = GFX_goal_generic_position_armies
+		x = 9
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_change_course_of_forgein_diplomacy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Introduce Capitalism
+	focus = {
+		id = AUS_introduce_capitalism
+		icon = GFX_focus_mex_privatisation
+		x = 9
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_revise_the_constitution }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Austrian Sphere
+	focus = {
+		id = AUS_the_austrian_sphere
+		icon = GFX_goal_generic_alliance
+		x = 0
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_change_course_of_forgein_diplomacy }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Revise the Constitution
+	focus = {
+		id = AUS_revise_the_constitution
+		icon = GFX_goal_generic_demand_territory
+		x = 9
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AUS_compromise_with_monarchists 
+			focus = AUS_surpress_monarchist_setiments 
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Seek Reaproachment with Hungary
+	focus = {
+		id = AUS_seek_reaproachment_with_hungary
+		icon = GFX_goal_generic_dangerous_deal
+		x = 1
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_change_course_of_forgein_diplomacy }
+		mutually_exclusive = { focus = AUS_challange_the_eastern_bloc }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Disband the Gemeines Heer
+	focus = {
+		id = AUS_disband_the_gemeines_heer
+		icon = GFX_goal_generic_territory_or_war
+		x = 4
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_vereinte_sozialistische_front }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Dennounce the Ständestaat-Idea
+	focus = {
+		id = AUS_dennounce_the_stndestaatidea
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		x = 11
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_revise_the_constitution }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Develop the K-Rocket
+	focus = {
+		id = AUS_develop_the_krocket
+		icon = GFX_focus_rocketry
+		x = 51
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_deploy_aas }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Integrate Bavaria in the Austrian Sphere
+	focus = {
+		id = AUS_integrate_bavaria_in_the_austrian_sphere
+		icon = GFX_goal_generic_military_deal
+		x = 24
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_demand_bavarian_subjugation }
+		mutually_exclusive = { focus = AUS_form_the_south_german_federation }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Form the South German Federation
+	focus = {
+		id = AUS_form_the_south_german_federation
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 26
+		y = 12
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_demand_bavarian_subjugation }
+		mutually_exclusive = { focus = AUS_integrate_bavaria_in_the_austrian_sphere }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Claim Greater Germany
+	focus = {
+		id = AUS_claim_greater_germany
+		icon = GFX_focus_generic_support_the_left_right
+		x = 26
+		y = 13
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_form_the_south_german_federation }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Build up Czech Industry
+	focus = {
+		id = AUS_build_up_czech_industry
+		icon = GFX_goal_generic_construct_civilian
+		x = 20
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_increase_autonomy_for_boehmia }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reform the Federation
+	focus = {
+		id = AUS_reform_the_federation
+		icon = GFX_goal_generic_improve_relations
+		x = 22
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AUS_increase_autonomy_for_boehmia 
+			focus = AUS_crush_czech_resistance 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Technologies Exchange
+	focus = {
+		id = AUS_technologies_exchange
+		icon = GFX_goal_tfv_generic_tech_sharing
+		x = 20
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_reform_the_federation }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Joint Military Staff
+	focus = {
+		id = AUS_joint_military_staff
+		icon = GFX_focus_generic_military_mission
+		x = 21
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_reform_the_federation }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Industrial Help for our "Allies"
+	focus = {
+		id = AUS_industrial_help_for_our_allies
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 24
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_reform_the_federation }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Cut Autonomy
+	focus = {
+		id = AUS_cut_autonomy
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 24
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_industrial_help_for_our_allies }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Move towards Unification
+	focus = {
+		id = AUS_move_towards_unification
+		icon = GFX_goal_generic_forceful_treaty
+		x = 24
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_cut_autonomy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The United States of Greater Austria
+	focus = {
+		id = AUS_the_united_states_of_greater_austria
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 24
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_move_towards_unification }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Luftabteilung
+	focus = {
+		id = AUS_the_luftabteilung
+		icon = GFX_goal_generic_air_fighter2
+		x = 52
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Experiment with Uranium
+	focus = {
+		id = AUS_experiment_with_uranium
+		icon = GFX_focus_wonderweapons
+		x = 53
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_deploy_aas }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Modernize our Tactics
+	focus = {
+		id = AUS_modernize_our_tactics
+		icon = GFX_goal_generic_navy_battleship
+		x = 57
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_rethink_our_approach }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Britannien-Bomber
+	focus = {
+		id = AUS_the_britannienbomber
+		icon = GFX_goal_generic_air_production
+		x = 54
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_strategic_destruction }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A United Germany at Last
+	focus = {
+		id = AUS_a_united_germany_at_last
+		icon = GFX_focus_usa_focus_on_europe
+		x = 26
+		y = 14
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_claim_greater_germany }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Build Air Bases
+	focus = {
+		id = AUS_build_air_bases
+		icon = GFX_goal_generic_air_production
+		x = 49
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_the_luftabteilung }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Expand Fighter Production Industry
+	focus = {
+		id = AUS_expand_fighter_production_industry
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 49
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_build_air_bases }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Air Exercises
+	focus = {
+		id = AUS_air_exercises
+		icon = GFX_goal_generic_air_doctrine
+		x = 52
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_the_luftabteilung }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Naval Bomber Experiements
+	focus = {
+		id = AUS_naval_bomber_experiements
+		icon = GFX_goal_generic_air_naval_bomber
+		x = 50
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AUS_casfocus 
+			focus = AUS_air_superiority 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Strategic Destruction
+	focus = {
+		id = AUS_strategic_destruction
+		icon = GFX_goal_generic_air_bomber
+		x = 54
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AUS_casfocus 
+			focus = AUS_air_superiority 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Expand Facilities
+	focus = {
+		id = AUS_expand_facilities
+		icon = GFX_focus_generic_cryptologic_bomb
+		x = 55
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_radar }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Deploy AA`s
+	focus = {
+		id = AUS_deploy_aas
+		icon = GFX_focus_generic_air_defense
+		x = 52
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AUS_casfocus 
+			focus = AUS_air_superiority 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Maximize Efficiency
+	focus = {
+		id = AUS_maximize_efficiency
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 62
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = AUS_develop_battleships 
+			focus = AUS_wolfpack 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Expand Ventian Docks
+	focus = {
+		id = AUS_expand_ventian_docks
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 62
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_maximize_efficiency }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Air Superiority
+	focus = {
+		id = AUS_air_superiority
+		icon = GFX_goal_generic_air_fighter2
+		x = 51
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_air_exercises }
+		mutually_exclusive = { focus = AUS_casfocus }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for CAS-Focus
+	focus = {
+		id = AUS_casfocus
+		icon = GFX_goal_generic_CAS
+		x = 53
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_air_exercises }
+		mutually_exclusive = { focus = AUS_air_superiority }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for RADAR
+	focus = {
+		id = AUS_radar
+		icon = GFX_goal_generic_radar
+		x = 54
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_the_luftabteilung }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Kaiserliche Marine
+	focus = {
+		id = AUS_the_kaiserliche_marine
+		icon = GFX_goal_generic_navy_battleship
+		x = 59
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Rebuild Adriatic Dockyards
+	focus = {
+		id = AUS_rebuild_adriatic_dockyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 59
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_the_kaiserliche_marine }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Overturn Naval Budget
+	focus = {
+		id = AUS_overturn_naval_budget
+		icon = GFX_focus_mex_privatisation
+		x = 60
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_rebuild_adriatic_dockyards }
+		mutually_exclusive = { focus = AUS_moderate_naval_spending }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Moderate Naval Spending
+	focus = {
+		id = AUS_moderate_naval_spending
+		icon = GFX_goal_generic_neutrality_focus
+		x = 58
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_rebuild_adriatic_dockyards }
+		mutually_exclusive = { focus = AUS_overturn_naval_budget }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Open Trieste Naval Academy
+	focus = {
+		id = AUS_open_trieste_naval_academy
+		icon = GFX_focus_research2
+		x = 60
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_overturn_naval_budget }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Doctrine Innovation
+	focus = {
+		id = AUS_doctrine_innovation
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 57
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_the_kaiserliche_marine }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Rethink our Approach
+	focus = {
+		id = AUS_rethink_our_approach
+		icon = GFX_goal_generic_navy_cruiser
+		x = 57
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_doctrine_innovation }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Develop Battleships
+	focus = {
+		id = AUS_develop_battleships
+		icon = GFX_focus_generic_navy_battleship2
+		x = 61
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_the_kaiserliche_marine }
+		mutually_exclusive = { focus = AUS_wolfpack }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Wolfpack
+	focus = {
+		id = AUS_wolfpack
+		icon = GFX_goal_generic_navy_submarine
+		x = 63
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_the_kaiserliche_marine }
+		mutually_exclusive = { focus = AUS_develop_battleships }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Expand Production
+	focus = {
+		id = AUS_expand_production
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 50
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = AUS_naval_bomber_experiements }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#End of focuses 
+ }

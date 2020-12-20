@@ -1,0 +1,1798 @@
+focus_tree = {
+	id = 2
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GER
+		}
+	}
+	#Focus for Looking Outwards Yet Again
+	focus = {
+		id = GER_looking_outwards_yet_again
+		icon = GFX_goal_generic_position_armies
+		x = 27
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_demand_lorraine }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Invade Prussia!
+	focus = {
+		id = GER_invade_prussia
+		icon = GFX_goal_generic_air_bomber
+		x = 29
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_the_march_to_knigsberg }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Invade Hannover!
+	focus = {
+		id = GER_invade_hannover
+		icon = GFX_goal_generic_position_armies
+		x = 27
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_from_cologne_to_hamburg }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Invade Saxony!
+	focus = {
+		id = GER_invade_saxony
+		icon = GFX_goal_generic_occupy_start_war
+		x = 25
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_from_frankfurt_to_leipzig }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Start Constructing Carriers
+	focus = {
+		id = GER_start_constructing_carriers
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 53
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_bomb_their_homes_their_ships_their_soldiers }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Fortifications are Key!
+	focus = {
+		id = GER_fortifications_are_key
+		icon = GFX_goal_generic_fortify_city
+		x = 44
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_tried_and_tested }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Start the Königsberg Naval Plan
+	focus = {
+		id = GER_start_the_knigsberg_naval_plan
+		icon = GFX_goal_continuous_naval_production
+		x = 51
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_build_some_cruisers 
+		}
+		prerequisite = { 
+			focus = GER_build_even_more_submarines 
+		}
+		prerequisite = { 
+			focus = GER_start_building_the_rest_of_the_fleet 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Division in the Reichstag
+	focus = {
+		id = GER_division_in_the_reichstag
+		icon = GFX_goal_generic_dangerous_deal
+		x = 17
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_the_weakened_eagle }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Weakened Eagle
+	focus = {
+		id = GER_the_weakened_eagle
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 17
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for New German Schools
+	focus = {
+		id = GER_new_german_schools
+		icon = GFX_goal_generic_axis_build_infantry
+		x = 17
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_depose_the_kaiser 
+			focus = GER_merge_the_parties 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for End the Border Clashes
+	focus = {
+		id = GER_end_the_border_clashes
+		icon = GFX_goal_rhineland
+		x = 43
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_reform_the_wehrmacht }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Fire Incompetent Officers
+	focus = {
+		id = GER_fire_incompetent_officers
+		icon = GFX_focus_generic_military_mission
+		x = 41
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_reform_the_wehrmacht }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Demand Lorraine!
+	focus = {
+		id = GER_demand_lorraine
+		icon = GFX_focus_usa_focus_on_europe
+		x = 27
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_reintegrate_the_populace }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Return Noble Titles
+	focus = {
+		id = GER_return_noble_titles
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 25
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_invade_saxony }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Military Exercises in Prussia
+	focus = {
+		id = GER_military_exercises_in_prussia
+		icon = GFX_goal_generic_army_doctrines
+		x = 44
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_improve_unit_training 
+		}
+		prerequisite = { 
+			focus = GER_end_the_border_clashes 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Wilhelm Line
+	focus = {
+		id = GER_the_wilhelm_line
+		icon = GFX_goal_generic_fortify_city
+		x = 35
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_rostock_naval_plan 
+		}
+		prerequisite = { 
+			focus = GER_increased_funding_for_military_factories 
+		}
+		prerequisite = { 
+			focus = GER_poznan_industrial_plan 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A New German Economy
+	focus = {
+		id = GER_a_new_german_economy
+		icon = GFX_goal_generic_production2
+		x = 35
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_new_german_military_complexes 
+			focus = GER_berlin_industrial_center_expansion 
+			focus = GER_knigsberg_naval_buildup_act 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Königsberg Naval Buildup Act
+	focus = {
+		id = GER_knigsberg_naval_buildup_act
+		icon = GFX_goal_generic_navy_battleship
+		x = 35
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_danzig_seaport_expansion_plan }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Unified Germanic Front
+	focus = {
+		id = GER_unified_germanic_front
+		icon = GFX_goal_anschluss
+		x = 12
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_strengthen_prussian_heritage }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Re-introduce Conscription
+	focus = {
+		id = GER_reintroduce_conscription
+		icon = GFX_focus_generic_military_mission
+		x = 15
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_merge_the_parties 
+			focus = GER_consolidate_power 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Arrest Political Opponents
+	focus = {
+		id = GER_arrest_political_opponents
+		icon = GFX_focus_generic_support_the_left_right
+		x = 14
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_dissolve_the_reichstag }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Merge the Parties
+	focus = {
+		id = GER_merge_the_parties
+		icon = GFX_goal_tripartite_pact
+		x = 16
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_the_kaiser_meets_with_the_fuhrer }
+		mutually_exclusive = { focus = GER_depose_the_kaiser }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Kaiser meets with the Fuhrer
+	focus = {
+		id = GER_the_kaiser_meets_with_the_fuhrer
+		icon = GFX_goal_tripartite_pact
+		x = 17
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_compromise_with_the_ultranationalists }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Power to the Kaiser
+	focus = {
+		id = GER_power_to_the_kaiser
+		icon = GFX_focus_ger_return_of_the_kaiser
+		x = 12
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_dissolve_the_reichstag }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Compromise with the Ultranationalists
+	focus = {
+		id = GER_compromise_with_the_ultranationalists
+		icon = GFX_goal_support_fascism
+		x = 17
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_division_in_the_reichstag }
+		mutually_exclusive = { 
+			focus = GER_acknowledge_the_reichstags_authority 
+		}
+		mutually_exclusive = { 
+			focus = GER_dissolve_the_reichstag 
+		}
+		mutually_exclusive = { 
+			focus = GER_ 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Dissolve the Reichstag
+	focus = {
+		id = GER_dissolve_the_reichstag
+		icon = GFX_focus_ger_oppose_hitler
+		x = 14
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_division_in_the_reichstag }
+		mutually_exclusive = { 
+			focus = GER_compromise_with_the_ultranationalists 
+		}
+		mutually_exclusive = { 
+			focus = GER_acknowledge_the_reichstags_authority 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Create a New Ultranationalist German Nation
+	focus = {
+		id = GER_create_a_new_ultranationalist_german_nation
+		icon = GFX_focus_ger_reichskommisariats
+		x = 18
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_new_german_militarism 
+		}
+		prerequisite = { 
+			focus = GER_new_german_schools 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Consolidate Power
+	focus = {
+		id = GER_consolidate_power
+		icon = GFX_goal_generic_political_pressure
+		x = 14
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_arrest_political_opponents }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Acknowledge the Reichstag's Authority
+	focus = {
+		id = GER_acknowledge_the_reichstags_authority
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 21
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_division_in_the_reichstag }
+		mutually_exclusive = { 
+			focus = GER_compromise_with_the_ultranationalists 
+		}
+		mutually_exclusive = { 
+			focus = GER_dissolve_the_reichstag 
+		}
+		mutually_exclusive = { 
+			focus = GER_ 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Depose the Kaiser
+	focus = {
+		id = GER_depose_the_kaiser
+		icon = GFX_focus_rom_abdicate
+		x = 18
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_the_kaiser_meets_with_the_fuhrer }
+		mutually_exclusive = { focus = GER_merge_the_parties }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Strengthen Prussian Heritage
+	focus = {
+		id = GER_strengthen_prussian_heritage
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 12
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_power_to_the_kaiser }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Meet with the Baltic Germans
+	focus = {
+		id = GER_meet_with_the_baltic_germans
+		icon = GFX_goal_generic_national_unity
+		x = 11
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_unified_germanic_front }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reaffirm Territorial Claims
+	focus = {
+		id = GER_reaffirm_territorial_claims
+		icon = GFX_goal_generic_major_war
+		x = 17
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_gott_mit_uns 
+			focus = GER_encourage_loyalists_across_germany 
+			focus = GER_unification_talks_with_the_federal_republic 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Increased Autonomy for Warsaw
+	focus = {
+		id = GER_increased_autonomy_for_warsaw
+		icon = GFX_focus_spr_masters_of_our_own_fate
+		x = 22
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_acknowledge_the_reichstags_authority }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Encourage German Immigration to Warsaw
+	focus = {
+		id = GER_encourage_german_immigration_to_warsaw
+		icon = GFX_focus_CZE_german_puppet
+		x = 13
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_unified_germanic_front }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for New German Militarism
+	focus = {
+		id = GER_new_german_militarism
+		icon = GFX_focus_ger_oppose_hitler
+		x = 19
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_depose_the_kaiser }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Gott Mit Uns!
+	focus = {
+		id = GER_gott_mit_uns
+		icon = GFX_focus_ger_return_of_the_kaiser
+		x = 17
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_reaffirm_loyalty_to_the_kaiser 
+			focus = GER_create_a_new_ultranationalist_german_nation 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reaffirm Loyalty to the Kaiser
+	focus = {
+		id = GER_reaffirm_loyalty_to_the_kaiser
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 16
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_new_german_schools 
+		}
+		prerequisite = { 
+			focus = GER_reintroduce_conscription 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Naval Invasion Support
+	focus = {
+		id = GER_naval_invasion_support
+		icon = GFX_focus_usa_escort_fighters
+		x = 60
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_carrier_fighter_grant }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Renovate Aging Dockyards
+	focus = {
+		id = GER_renovate_aging_dockyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 50
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_rebuild_the_kriegsmarine }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Replace Aging Ships
+	focus = {
+		id = GER_replace_aging_ships
+		icon = GFX_goal_generic_navy_submarine
+		x = 52
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_rebuild_the_kriegsmarine }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for New German Military Complexes
+	focus = {
+		id = GER_new_german_military_complexes
+		icon = GFX_goal_continuous_armor_production
+		x = 37
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_the_luftschild }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Berlin Industrial Center Expansion
+	focus = {
+		id = GER_berlin_industrial_center_expansion
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 33
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_the_autobahn }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Luftschild
+	focus = {
+		id = GER_the_luftschild
+		icon = GFX_focus_generic_air_defense
+		x = 37
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_the_brandenburg_plan }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Danzig Seaport Expansion Plan
+	focus = {
+		id = GER_danzig_seaport_expansion_plan
+		icon = GFX_goal_generic_navy_cruiser
+		x = 35
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_the_mecklenburg_plan 
+			focus = GER_the_brandenburg_plan 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Encourage Loyalists across Germany
+	focus = {
+		id = GER_encourage_loyalists_across_germany
+		icon = GFX_goal_generic_demand_territory
+		x = 13
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_meet_with_the_baltic_germans 
+		}
+		prerequisite = { 
+			focus = GER_encourage_german_immigration_to_warsaw 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Send Diplomats Across Europe
+	focus = {
+		id = GER_send_diplomats_across_europe
+		icon = GFX_goal_continuous_increase_nu
+		x = 21
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_reinstate_political_freedoms 
+		}
+		prerequisite = { 
+			focus = GER_increased_autonomy_for_warsaw 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Kaiser's Tour Across Europe
+	focus = {
+		id = GER_the_kaisers_tour_across_europe
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		x = 21
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_send_diplomats_across_europe }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Increased Colonial Autonomy
+	focus = {
+		id = GER_increased_colonial_autonomy
+		icon = GFX_goal_continuous_boost_freedom
+		x = 21
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_the_kaisers_tour_across_europe }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Unification Talks with the Federal Republic
+	focus = {
+		id = GER_unification_talks_with_the_federal_republic
+		icon = GFX_goal_tripartite_pact
+		x = 21
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_increased_colonial_autonomy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for German Economic Buildup Act
+	focus = {
+		id = GER_german_economic_buildup_act
+		icon = GFX_goal_generic_production
+		x = 35
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Propaganda Leaflets
+	focus = {
+		id = GER_propaganda_leaflets
+		icon = GFX_goal_generic_propaganda
+		x = 19
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_create_a_new_ultranationalist_german_nation }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Brandenburg Plan
+	focus = {
+		id = GER_the_brandenburg_plan
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 36
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_german_economic_buildup_act }
+		mutually_exclusive = { focus = GER_the_mecklenburg_plan }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reinstate Political Freedoms
+	focus = {
+		id = GER_reinstate_political_freedoms
+		icon = GFX_goal_generic_improve_relations
+		x = 20
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_acknowledge_the_reichstags_authority }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Mecklenburg Plan
+	focus = {
+		id = GER_the_mecklenburg_plan
+		icon = GFX_goal_continuous_non_factory_construct
+		x = 34
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_german_economic_buildup_act }
+		mutually_exclusive = { focus = GER_the_brandenburg_plan }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Autobahn
+	focus = {
+		id = GER_the_autobahn
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 33
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_the_mecklenburg_plan }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Rebuild the Kriegsmarine
+	focus = {
+		id = GER_rebuild_the_kriegsmarine
+		icon = GFX_goal_generic_navy_cruiser
+		x = 51
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Expand the Luftwaffe
+	focus = {
+		id = GER_expand_the_luftwaffe
+		icon = GFX_goal_generic_air_fighter2
+		x = 58
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reform the Wehrmacht
+	focus = {
+		id = GER_reform_the_wehrmacht
+		icon = GFX_goal_generic_small_arms
+		x = 43
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for More Efficient Military Factories
+	focus = {
+		id = GER_more_efficient_military_factories
+		icon = GFX_goal_generic_neutrality_focus
+		x = 37
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_new_german_military_complexes }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Poznan Industrial Plan
+	focus = {
+		id = GER_poznan_industrial_plan
+		icon = GFX_goal_generic_oil_refinery
+		x = 33
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_a_new_german_economy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Increased Funding for Military Factories
+	focus = {
+		id = GER_increased_funding_for_military_factories
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 37
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_a_new_german_economy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Rostock Naval Plan
+	focus = {
+		id = GER_rostock_naval_plan
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 35
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_a_new_german_economy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for More Efficient Civilian Factories
+	focus = {
+		id = GER_more_efficient_civilian_factories
+		icon = GFX_goal_generic_construct_civilian
+		x = 33
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_berlin_industrial_center_expansion }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Improve Unit Training
+	focus = {
+		id = GER_improve_unit_training
+		icon = GFX_focus_secret_rearmament
+		x = 45
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_reform_the_wehrmacht }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Germania Rules the Skies!
+	focus = {
+		id = GER_germania_rules_the_skies
+		icon = GFX_goal_generic_political_pressure
+		x = 58
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_the_grand_finale }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Carrier Fighter Grant
+	focus = {
+		id = GER_carrier_fighter_grant
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 60
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_kriegsmarineluftwaffe_cooperation }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Strategical Bombing Locations
+	focus = {
+		id = GER_strategical_bombing_locations
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 56
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_blitzkrieg_luftwaffe }
+		mutually_exclusive = { focus = GER_copy_foreign_designs }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Blitzkrieg Luftwaffe
+	focus = {
+		id = GER_blitzkrieg_luftwaffe
+		icon = GFX_goal_poland_goal
+		x = 56
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_shock_and_terror }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Tried and Tested
+	focus = {
+		id = GER_tried_and_tested
+		icon = GFX_goal_generic_axis_build_infantry
+		x = 44
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_military_exercises_in_prussia }
+		mutually_exclusive = { 
+			focus = GER_superior_firepower 
+		}
+		mutually_exclusive = { 
+			focus = GER_blitzkrieg 
+		}
+		mutually_exclusive = { 
+			focus = GER_quantity_over_quality 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Start Building the Rest of the Fleet
+	focus = {
+		id = GER_start_building_the_rest_of_the_fleet
+		icon = GFX_goal_generic_navy_battleship
+		x = 53
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_start_constructing_carriers }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Research Into New Artillery Equipment
+	focus = {
+		id = GER_research_into_new_artillery_equipment
+		icon = GFX_focus_prc_infiltration
+		x = 42
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_shock_and_awe }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Research Into New Infantry Equipment
+	focus = {
+		id = GER_research_into_new_infantry_equipment
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 44
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_fortifications_are_key }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Research Into New Tanks
+	focus = {
+		id = GER_research_into_new_tanks
+		icon = GFX_focus_generic_tank_production
+		x = 40
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_new_model_infantry }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for New Model Infantry
+	focus = {
+		id = GER_new_model_infantry
+		icon = GFX_goal_generic_army_motorized
+		x = 40
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_blitzkrieg }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Prussian Legacy
+	focus = {
+		id = GER_prussian_legacy
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 42
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_end_the_border_clashes 
+		}
+		prerequisite = { 
+			focus = GER_fire_incompetent_officers 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Merit, Not Birth!
+	focus = {
+		id = GER_merit_not_birth
+		icon = GFX_focus_generic_military_academy
+		x = 40
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_fire_incompetent_officers }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Blitzkrieg!
+	focus = {
+		id = GER_blitzkrieg
+		icon = GFX_focus_generic_license_production
+		x = 40
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_merit_not_birth }
+		mutually_exclusive = { 
+			focus = GER_superior_firepower 
+		}
+		mutually_exclusive = { 
+			focus = GER_tried_and_tested 
+		}
+		mutually_exclusive = { 
+			focus = GER_quantity_over_quality 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Build Some Cruisers
+	focus = {
+		id = GER_build_some_cruisers
+		icon = GFX_goal_generic_navy_cruiser
+		x = 49
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_build_more_battleships }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Destroy Enemy Support Infrastructure
+	focus = {
+		id = GER_destroy_enemy_support_infrastructure
+		icon = GFX_goal_generic_air_bomber
+		x = 58
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_shock_and_terror }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Women in the Workforce
+	focus = {
+		id = GER_women_in_the_workforce
+		icon = GFX_focus_generic_manpower
+		x = 46
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_a_new_wehrmacht }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Superior Firepower
+	focus = {
+		id = GER_superior_firepower
+		icon = GFX_goal_generic_army_artillery2
+		x = 42
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_prussian_legacy }
+		mutually_exclusive = { 
+			focus = GER_tried_and_tested 
+		}
+		mutually_exclusive = { 
+			focus = GER_blitzkrieg 
+		}
+		mutually_exclusive = { 
+			focus = GER_quantity_over_quality 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Shock and Awe
+	focus = {
+		id = GER_shock_and_awe
+		icon = GFX_goal_generic_occupy_start_war
+		x = 42
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_superior_firepower }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for A New Wehrmacht!
+	focus = {
+		id = GER_a_new_wehrmacht
+		icon = GFX_focus_generic_combined_arms
+		x = 43
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_research_into_new_artillery_equipment 
+			focus = GER_research_into_new_infantry_equipment 
+			focus = GER_research_into_new_tanks 
+			focus = GER_renovate_factories 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Renovate Tank Factories
+	focus = {
+		id = GER_renovate_tank_factories
+		icon = GFX_focus_generic_army_tanks2
+		x = 40
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_a_new_wehrmacht }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Build More Military Factories
+	focus = {
+		id = GER_build_more_military_factories
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 42
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_a_new_wehrmacht }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Improve Production Rates
+	focus = {
+		id = GER_improve_production_rates
+		icon = GFX_goal_generic_production
+		x = 46
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_improve_unit_training }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Quantity Over Quality
+	focus = {
+		id = GER_quantity_over_quality
+		icon = GFX_goal_generic_small_arms
+		x = 46
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_improve_production_rates }
+		mutually_exclusive = { 
+			focus = GER_blitzkrieg 
+		}
+		mutually_exclusive = { 
+			focus = GER_superior_firepower 
+		}
+		mutually_exclusive = { 
+			focus = GER_tried_and_tested 
+		}
+		mutually_exclusive = { 
+			focus = GER_ 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Massive Military Buildup
+	focus = {
+		id = GER_massive_military_buildup
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 46
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_quantity_over_quality }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Renovate Factories
+	focus = {
+		id = GER_renovate_factories
+		icon = GFX_goal_generic_construction2
+		x = 46
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_massive_military_buildup }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Build More Forts
+	focus = {
+		id = GER_build_more_forts
+		icon = GFX_goal_generic_construct_military
+		x = 44
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_a_new_wehrmacht }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Bomb Their Homes, Their Ships, Their Soldiers
+	focus = {
+		id = GER_bomb_their_homes_their_ships_their_soldiers
+		icon = GFX_goal_generic_navy_carrier
+		x = 53
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_replace_aging_ships }
+		mutually_exclusive = { 
+			focus = GER_tying_up_the_enemy 
+		}
+		mutually_exclusive = { 
+			focus = GER_the_mere_threat 
+		}
+		mutually_exclusive = { 
+			focus = GER_ 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Mere Threat
+	focus = {
+		id = GER_the_mere_threat
+		icon = GFX_goal_generic_navy_battleship
+		x = 49
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_renovate_aging_dockyards }
+		mutually_exclusive = { 
+			focus = GER_tying_up_the_enemy 
+		}
+		mutually_exclusive = { 
+			focus = GER_bomb_their_homes_their_ships_their_soldiers 
+		}
+		mutually_exclusive = { 
+			focus = GER_ 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Tying Up the Enemy
+	focus = {
+		id = GER_tying_up_the_enemy
+		icon = GFX_goal_generic_navy_anti_submarine
+		x = 51
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_renovate_aging_dockyards 
+		}
+		prerequisite = { 
+			focus = GER_replace_aging_ships 
+		}
+		mutually_exclusive = { 
+			focus = GER_the_mere_threat 
+		}
+		mutually_exclusive = { 
+			focus = GER_bomb_their_homes_their_ships_their_soldiers 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Build More Battleships
+	focus = {
+		id = GER_build_more_battleships
+		icon = GFX_focus_generic_navy_battleship2
+		x = 49
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_the_mere_threat }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Build More Submarines
+	focus = {
+		id = GER_build_more_submarines
+		icon = GFX_goal_generic_navy_submarine
+		x = 51
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_tying_up_the_enemy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Increase Production
+	focus = {
+		id = GER_increase_production
+		icon = GFX_goal_generic_air_production
+		x = 58
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_cooperation_with_the_wehrmacht }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Cooperation with the Wehrmacht
+	focus = {
+		id = GER_cooperation_with_the_wehrmacht
+		icon = GFX_goal_molotov_ribbentrop_pact
+		x = 58
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_destroy_enemy_support_infrastructure }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Build Even More Submarines
+	focus = {
+		id = GER_build_even_more_submarines
+		icon = GFX_goal_generic_navy_submarine
+		x = 51
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_build_more_submarines }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Germania Rules the Waves!
+	focus = {
+		id = GER_germania_rules_the_waves
+		icon = GFX_focus_ger_accept_british_naval_dominance
+		x = 51
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_start_the_knigsberg_naval_plan }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Shock and Terror
+	focus = {
+		id = GER_shock_and_terror
+		icon = GFX_goal_generic_air_naval_bomber
+		x = 58
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_expand_the_luftwaffe }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Kriegsmarine-Luftwaffe Cooperation
+	focus = {
+		id = GER_kriegsmarineluftwaffe_cooperation
+		icon = GFX_goal_generic_navy_carrier
+		x = 60
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_shock_and_terror }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Copy Foreign Designs
+	focus = {
+		id = GER_copy_foreign_designs
+		icon = GFX_focus_YUG_rogozarski
+		x = 56
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_strategical_bombing_locations }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The Grand Finale
+	focus = {
+		id = GER_the_grand_finale
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 58
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_naval_invasion_support 
+		}
+		prerequisite = { 
+			focus = GER_copy_foreign_designs 
+		}
+		prerequisite = { 
+			focus = GER_increase_production 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Reclaim Silesia!
+	focus = {
+		id = GER_reclaim_silesia
+		icon = GFX_goal_generic_military_sphere
+		x = 27
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_completed_focus= GER_reaffirm_territorial_claims
+		}
+	}
+
+	#Focus for Deal with the Socialists
+	focus = {
+		id = GER_deal_with_the_socialists
+		icon = GFX_goal_generic_war_with_comintern
+		x = 27
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_arm_the_loyalist_freikorps }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for From Cologne to Hamburg!
+	focus = {
+		id = GER_from_cologne_to_hamburg
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 27
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_deal_with_the_socialists }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The March to Königsberg!
+	focus = {
+		id = GER_the_march_to_knigsberg
+		icon = GFX_focus_prc_infiltration
+		x = 29
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_finish_off_the_kaiser }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for From Frankfurt to Leipzig!
+	focus = {
+		id = GER_from_frankfurt_to_leipzig
+		icon = GFX_goal_generic_military_sphere
+		x = 25
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_deal_with_the_republicans }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Finish Off the Kaiser
+	focus = {
+		id = GER_finish_off_the_kaiser
+		icon = GFX_focus_rom_abdicate
+		x = 29
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_arm_the_loyalist_freikorps }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Arm the Loyalist Freikorps
+	focus = {
+		id = GER_arm_the_loyalist_freikorps
+		icon = GFX_focus_generic_little_entente
+		x = 27
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_reclaim_silesia }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Deal with the Republicans
+	focus = {
+		id = GER_deal_with_the_republicans
+		icon = GFX_goal_generic_political_pressure
+		x = 25
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_arm_the_loyalist_freikorps }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Re-integrate the Populace
+	focus = {
+		id = GER_reintegrate_the_populace
+		icon = GFX_goal_generic_demand_territory
+		x = 27
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_invade_prussia 
+			focus = GER_invade_hannover 
+			focus = GER_invade_saxony 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The King is Dead; Long Live the King
+	focus = {
+		id = GER_the_king_is_dead_long_live_the_king
+		icon = GFX_focus_rom_abdicate
+		x = 29
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_invade_prussia }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The German Tiger Roars Again
+	focus = {
+		id = GER_the_german_tiger_roars_again
+		icon = GFX_focus_ger_oppose_hitler
+		x = 17
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_reaffirm_territorial_claims }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#End of focuses 
+ }

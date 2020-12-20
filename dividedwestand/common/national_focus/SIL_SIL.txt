@@ -1,0 +1,481 @@
+focus_tree = {
+	id = SIL
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SIL
+		}
+	}
+	#Focus for Nationalize Austrian Industry
+	focus = {
+		id = SIL_nationalize_austrian_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 16
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SIL_replace_the_statthalter }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Strike First
+	focus = {
+		id = SIL_strike_first
+		icon = GFX_focus_attack_germany
+		x = 7
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SIL_the_german_threat }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Gleiwitz Fabriken
+	focus = {
+		id = SIL_gleiwitz_fabriken
+		icon = GFX_goal_generic_construction2
+		x = 9
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SIL_mobilize_the_economy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Expand Conscription
+	focus = {
+		id = SIL_expand_conscription
+		icon = GFX_focus_generic_military_mission
+		x = 11
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SIL_mobilize_the_economy }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Build up a Standing Army
+	focus = {
+		id = SIL_build_up_a_standing_army
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 7
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SIL_ask_for_weapon_shipments }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Our own Economic Plan
+	focus = {
+		id = SIL_our_own_economic_plan
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 17
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SIL_nationalize_austrian_industry }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Secrure Arms Depots
+	focus = {
+		id = SIL_secrure_arms_depots
+		icon = GFX_goal_generic_army_artillery2
+		x = 13
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SIL_replace_the_statthalter }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Build up a Paramiliary Organisation
+	focus = {
+		id = SIL_build_up_a_paramiliary_organisation
+		icon = GFX_goal_rhineland
+		x = 13
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SIL_secrure_arms_depots }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Expand the Arms Industry
+	focus = {
+		id = SIL_expand_the_arms_industry
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 15
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SIL_nationalize_austrian_industry }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Improve Equipment of the Force
+	focus = {
+		id = SIL_improve_equipment_of_the_force
+		icon = GFX_focus_secret_rearmament
+		x = 14
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SIL_expand_the_arms_industry 
+		}
+		prerequisite = { 
+			focus = SIL_build_up_a_paramiliary_organisation 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Expand the Force
+	focus = {
+		id = SIL_expand_the_force
+		icon = GFX_goal_generic_build_tank
+		x = 12
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SIL_build_up_a_paramiliary_organisation }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Nationalize the Force
+	focus = {
+		id = SIL_nationalize_the_force
+		icon = GFX_focus_chi_army_reform
+		x = 13
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SIL_expand_the_force 
+		}
+		prerequisite = { 
+			focus = SIL_improve_equipment_of_the_force 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Breslau Plan
+	focus = {
+		id = SIL_breslau_plan
+		icon = GFX_goal_generic_position_armies
+		x = 16
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SIL_our_own_economic_plan 
+			focus = SIL_expand_the_arms_industry 
+		}
+		mutually_exclusive = { focus = SIL_focus_on_rural_regions }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Focus on Rural Regions
+	focus = {
+		id = SIL_focus_on_rural_regions
+		icon = GFX_goal_generic_construction2
+		x = 18
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SIL_our_own_economic_plan }
+		mutually_exclusive = { focus = SIL_breslau_plan }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Expand Urban Infrastructure
+	focus = {
+		id = SIL_expand_urban_infrastructure
+		icon = GFX_goal_generic_production2
+		x = 15
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SIL_breslau_plan }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Expand the Steel Production
+	focus = {
+		id = SIL_expand_the_steel_production
+		icon = GFX_focus_generic_steel
+		x = 17
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SIL_breslau_plan 
+			focus = SIL_focus_on_rural_regions 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Build Electric Railways
+	focus = {
+		id = SIL_build_electric_railways
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 19
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SIL_focus_on_rural_regions }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Mobilize the Economy
+	focus = {
+		id = SIL_mobilize_the_economy
+		icon = GFX_goal_generic_consumer_goods
+		x = 10
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SIL_declare_independance 
+		}
+		prerequisite = { 
+			focus = SIL_expand_the_force 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Declare Independance
+	focus = {
+		id = SIL_declare_independance
+		icon = GFX_goal_generic_alliance
+		x = 10
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SIL_persuade_the_police_force 
+		}
+		prerequisite = { 
+			focus = SIL_seek_forgein_help 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for The German Threat
+	focus = {
+		id = SIL_the_german_threat
+		icon = GFX_goal_generic_fortify_city
+		x = 7
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SIL_declare_independance 
+			focus = SIL_build_up_a_standing_army 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Treaty of Breslau
+	focus = {
+		id = SIL_treaty_of_breslau
+		icon = GFX_focus_generic_treaty
+		x = 6
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SIL_seek_cooperation_with_austria }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Econmic Help from the Kaiser
+	focus = {
+		id = SIL_econmic_help_from_the_kaiser
+		icon = GFX_goal_generic_construct_civilian
+		x = 2
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SIL_treaty_of_breslau }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Seek Forgein Help
+	focus = {
+		id = SIL_seek_forgein_help
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 11
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SIL_replace_the_statthalter }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Persuade the Police Force
+	focus = {
+		id = SIL_persuade_the_police_force
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 9
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SIL_dismiss_pro_austrian_ministers }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Austrian Advisors
+	focus = {
+		id = SIL_austrian_advisors
+		icon = GFX_focus_generic_military_academy
+		x = 5
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = SIL_treaty_of_breslau 
+		}
+		prerequisite = { 
+			focus = SIL_ask_for_weapon_shipments 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Ask for Weapon Shipments
+	focus = {
+		id = SIL_ask_for_weapon_shipments
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 7
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SIL_treaty_of_breslau }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Seek Cooperation with Austria
+	focus = {
+		id = SIL_seek_cooperation_with_austria
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 6
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = SIL_replace_the_statthalter }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Replace the Statthalter
+	focus = {
+		id = SIL_replace_the_statthalter
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		x = 10
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		mutually_exclusive = { focus = SIL_seek_cooperation_with_austria }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Dismiss Pro Austrian Ministers
+	focus = {
+		id = SIL_dismiss_pro_austrian_ministers
+		icon = GFX_goal_generic_political_pressure
+		x = 9
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SIL_replace_the_statthalter }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Seek Forgein Investments
+	focus = {
+		id = SIL_seek_forgein_investments
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 4
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SIL_treaty_of_breslau }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for Military Dictatorship
+	focus = {
+		id = SIL_military_dictatorship
+		icon = GFX_focus_ger_oppose_hitler
+		x = 13
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = SIL_nationalize_the_force }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#End of focuses 
+ }
